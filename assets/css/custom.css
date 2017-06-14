@@ -547,11 +547,11 @@ text-align: center;
 height: 60px;
 }
 
-.navbar-brand img{
+/*.navbar-brand img{
 	margin-top: -7px;
     margin-left: -30%;
     width: 60%;
-}
+}*/
 
 .active-menu {
     background-color:#2EA7EB!important;
