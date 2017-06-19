@@ -41,7 +41,7 @@ protegePagina();
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-	<?php include 'cabecalho.php' ?>
+	<?php include("../php/cabecalho.php"); ?>
                <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
