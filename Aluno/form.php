@@ -7,17 +7,21 @@ protegePagina();
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-88350404-1', 'auto');
+  ga('send', 'pageview');
+</script>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- Atitude Cursos -->
-				<ins class="adsbygoogle"
-				     style="display:block"
-				     data-ad-client="ca-pub-9095521793912977"
-				     data-ad-slot="7723042240"
-				     data-ad-format="auto"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-                        <!-- End Side Column -->
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9095521793912977",
+    enable_page_level_ads: true
+  });
+</script>
       <meta charset="utf-8" />
       <link rel="shortcut icon" href="../images/ico/favicon.png">
     
@@ -42,6 +46,7 @@ protegePagina();
    
 </head>
 <body>
+	<?php include("../php/cabecalho.php"); ?>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
