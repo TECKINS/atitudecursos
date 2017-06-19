@@ -44,7 +44,7 @@ protegePagina();
    
 </head>
 <body>
-    <?php include 'cabecalho.php' ?>
+    <?php include("../php/cabecalho.php"); ?>
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
