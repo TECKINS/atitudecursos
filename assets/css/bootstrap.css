@@ -306,6 +306,8 @@ figure {
 }
 img {
   vertical-align: middle;
+}
+logo {
   margin-left: -200;
 }
 .img-responsive,
