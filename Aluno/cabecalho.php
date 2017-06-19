@@ -1,6 +1,6 @@
 ﻿<div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
-            <a class="navbar-brand" href="index.php"><img src="images/logo.png"/></a>
+            <a class="navbar-brand" href="index.php"><img class="logo" src="images/logo.png"/></a>
             <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
 
  <!-- Top Menu Items -->
