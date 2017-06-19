@@ -55,39 +55,6 @@ $total = mysqli_num_rows($dados);
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
-    <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="../images/logo.png"/></a> 
-            </div>
-  <div style="color: white;
-padding: 15px 50px 5px 50px;
-float: right;
-font-size: 16px;"> <?php echo "Ultimo acesso ". $_SESSION['data_ultimo_login'] ?> 
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm" style="margin-left: 30px"><i class="fa fa-sign-out"> </i>Sair</button></div>
-
-<div class="modal fade" id="confirm" role="dialog">
-  <div class="modal-dialog modal-md">
-
-    <div class="modal-content">
-      <div class="modal-body">
-            <p>Você deseja realmente sair?</p>
-      </div>
-      <div class="modal-footer">
-        <a href="../php/logout.php" type="button" class="btn btn-danger" style="margin-left: 30px" id="delete">Confirmar</a>
-            <button type="button" data-dismiss="modal" class="btn btn-default">Cancelar</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-        </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
