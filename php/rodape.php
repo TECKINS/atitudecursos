@@ -1,17 +1,4 @@
-<div class="footer" id="footer"> 
-  <div class="container">
-				<div id="bar">
-          <a href="http://twitter.com/CursosAtitude" class="twitter">Twitter</a>
-          <a href="https://www.facebook.com/atitudecursos" class="facebook">Facebook</a>
-          <a href="https://plus.google.com/" class="nh googleplus">Google Plus</a>
-          <a href="https://www.atitudecursos.org/blog/" class="nh blog">Blog</a>
-          <a href="#" class="payment togglepaymentbanner">Formas de Pagamento</a>
-          <div id="paymentbannerpopup">
-          <a href="#" class="close togglepaymentbanner">Fechar</a>
-          <img src="images/bannereducativomp.jpg" data-pagespeed-url-hash="911075389" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
-          </div>
-          <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/index.html#url=www.atitudecursos.org" target="_blank" class="navseg"><img src="img/google-check-navseg.png" alt="Navegação Segura" data-pagespeed-url-hash="3076666018" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-          </div>
+<div class="footer" id="footer">
   <div class="footer hidden-sm hidden-xs"> 
     <div class="container-pesquisa"> 
       <div class="row margin-left-10 margin-right-10"> 
