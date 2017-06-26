@@ -10,7 +10,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40"> 
           <div class="headline text-center">
-            <h2 style="color: #eee; font-weight: 600;">Institucional</h2></div> </div> 
+            <h2 style="color: #; font-weight: 600;">Institucional</h2></div> </div> 
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 md-margin-bottom-40"> 
             <ul class="list-unstyled link-list"> 
               <li class="padding-bottom-5 padding-top-5">
