@@ -274,7 +274,7 @@ protegePagina();
 
                     </div>
                 </div>
-
+		    <?php include("../php/rodape.php"); ?>
     </div>
              <!-- /. PAGE INNER  -->
             </div>
