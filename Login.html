@@ -155,11 +155,6 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
 <header id="header" role="banner">
     <div class="container">
         <div id="navbar" class="navbar navbar-default">
@@ -210,6 +205,12 @@
                     </div>-->
                     <div class="fb-login-button" data-width="470" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
                     </br>
+                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+
+                    <div id="status">
+                    </div>
+                    <br>
                     <div class="input-group margin-bottom-20">
                         <span class="input-group-addon">
                             <i class="fa fa-user"></i>
