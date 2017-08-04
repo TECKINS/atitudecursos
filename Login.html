@@ -107,7 +107,7 @@
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.8' // use graph api version 2.8
+    version    : 'v2.10' // use graph api version 2.8
   });
 
   // Now that we've initialized the JavaScript SDK, we call 
@@ -203,12 +203,12 @@
                     
                     <div class="fb-login-button" data-width="470" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
                     
+                    <div id="status">
+                    <div>
                     -->
                     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                     </fb:login-button>
-
-                    <div id="status">
-                    <div>
+                    
                     <div class="input-group margin-bottom-20">
                         <span class="input-group-addon">
                             <i class="fa fa-user"></i>
