@@ -30,6 +30,8 @@ if(!isset($_COOKIE[$cookie_name])) {
     echo "Cookie '" . $cookie_name . "' is set!<br>";
     echo "Value is: " . $_COOKIE[$cookie_name];
 }
+    
+    print_r($_SESSION);
 ?>
 
 </body>
