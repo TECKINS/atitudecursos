@@ -2,7 +2,7 @@
     $cookie_name = "user";
     $cookie_value = "John Doe";  
 
-    bool setcookie ( string $name [, string $value = "mt_rand()" [, int $expire = 0 [, string $path = "/" [, string $domain = ".atitudecursos.org" [, bool $secure = true [, bool $httponly = false ]]]]]] )
+    bool setcookie ( string $name [, string $value = "mt_rand()" [, int $expire = 0 [, string $path = "/" [, string $domain = ".atitudecursos.org" [, bool $secure = false [, bool $httponly = false ]]]]]] )
 
     setcookie("user", "mt_rand()", time() + 3600, '/~cookies/', ".atitudecursos.org", 1);
     
