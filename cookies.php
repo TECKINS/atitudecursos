@@ -1,6 +1,8 @@
 <?php
+    $cookie_name = "user";
+    $cookie_value = "John Doe";    
 
-    setcookie("user", "mt_rand()", time() + 3600, '/cookies/');
+    setcookie("user", "mt_rand();", time() + 3600, '/~cookies/', ".atitudecursos.org", 1);
     
     if(count($_COOKIE) > 0) {
         echo "Cookies are enabled.";
@@ -9,13 +11,10 @@
     }
     
   // Cria o mesmo cookie acima só que irá durar três dias
-    setcookie('user', 'Fulano', (time() + (3 * 24 * 3600)));
-    
-  // Cria o novo cookie para durar duas horas
-    setcookie('user', 'Ciclano', (time() + (2 * 3600)));
+    setcookie('usuario', 'Fulano', (time() + (3 * 24 * 3600)));
   
   // set the expiration date to one hour ago
-    setcookie("user", "", time() - 3600);
+    //setcookie("user", "", time() - 3600);
     
     print_r($_COOKIE);
 ?>
