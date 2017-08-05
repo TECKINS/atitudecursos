@@ -4,7 +4,7 @@
 
     //bool setcookie ( string $name [, string $value = "mt_rand()" [, int $expire = 0 [, string $path = "/" [, string $domain = ".atitudecursos.org" [, bool $secure = false [, bool $httponly = false ]]]]]] )
 
-    setcookie("user", "mt_rand();", time() + 3600, "/~cookies/", ".atitudecursos.org");
+    setcookie("user", "mt_rand();", time() + 3600, "/", ".atitudecursos.org");
     
     if(count($_COOKIE) > 0) {
         echo "Cookies are enabled.";
