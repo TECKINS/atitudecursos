@@ -4,7 +4,7 @@
 
     //bool setcookie ( string $name [, string $value = "mt_rand()" [, int $expire = 0 [, string $path = "/" [, string $domain = ".atitudecursos.org" [, bool $secure = false [, bool $httponly = false ]]]]]] )
 
-    setcookie("user", "mt_rand()", time() + 3600, "/~cookies/", ".atitudecursos.org");
+    setcookie("user", "mt_rand();", time() + 3600, "/~cookies/", ".atitudecursos.org");
     
     if(count($_COOKIE) > 0) {
         echo "Cookies are enabled.";
@@ -13,7 +13,7 @@
     }
     
   // Cria o mesmo cookie acima só que irá durar três dias
-    setcookie('usuario', 'rand()', (time() + (3 * 24 * 3600)), '/', '.atitudecursos.org');
+    setcookie('usuario', 'rand();', (time() + (3 * 24 * 3600)), '/', '.atitudecursos.org');
   
   // set the expiration date to one hour ago
     //setcookie("user", "", time() - 3600);
