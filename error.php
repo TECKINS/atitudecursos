@@ -37,7 +37,7 @@ $test=2;
 if ($test>=1) {
   trigger_error("Value must be 1 or below",E_USER_WARNING);
 }
-*/
+
 
 //error handler function
 function customError($errno, $errstr) {
@@ -55,6 +55,18 @@ $test=2;
 if ($test>=1) {
   trigger_error("Value must be 1 or below",E_USER_WARNING);
 }
+*/
+
+//create function with an exception
+function checkNum($number) {
+  if($number>1) {
+    throw new Exception("Value must be 1 or below");
+  }
+  return true;
+}
+
+//trigger exception
+checkNum(2);
 
 
 
