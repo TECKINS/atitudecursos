@@ -55,7 +55,7 @@ $test=2;
 if ($test>=1) {
   trigger_error("Value must be 1 or below",E_USER_WARNING);
 }
-*/
+
 
 //create function with an exception
 function checkNum($number) {
@@ -67,6 +67,27 @@ function checkNum($number) {
 
 //trigger exception
 checkNum(2);
+*/
+
+//create function with an exception
+function checkNum($number) {
+  if($number>1) {
+    throw new Exception("Value must be 1 or below");
+  }
+  return true;
+}
+
+//trigger exception in a "try" block
+try {
+  checkNum(2);
+  //If the exception is thrown, this text will not be shown
+  echo 'If you see this, the number is 1 or below';
+}
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
 
 
 
