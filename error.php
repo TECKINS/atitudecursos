@@ -12,7 +12,7 @@ error_file,error_line,error_context);
 //error handler function
 //function customError($errno, $errstr) {
   //echo "<b>Error:</b> [$errno] $errstr";
-/}
+//}
 
 //set error handler
 //set_error_handler("customError");
