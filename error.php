@@ -7,8 +7,18 @@ if(!file_exists("welcome.txt")) {
 error_file,error_line,error_context);
 } else {
   $file=fopen("welcome.txt","r");
-  echo $file;
 }
+
+//error handler function
+function customError($errno, $errstr) {
+  echo "<b>Error:</b> [$errno] $errstr";
+}
+
+//set error handler
+set_error_handler("customError");
+
+//trigger error
+echo($test);
 
 
 ?>
