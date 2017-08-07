@@ -146,7 +146,6 @@ catch (customException $e) {
 catch(Exception $e) {
   echo $e->getMessage();
 }
-*/
 
 class customException extends Exception {
   public function errorMessage() {
@@ -177,5 +176,15 @@ catch (customException $e) {
   echo $e->errorMessage();
 }
 
+*/
+
+
+function myException($exception) {
+  echo "<b>Exception:</b> " . $exception->getMessage();
+}
+
+set_exception_handler('myException');
+
+throw new Exception('Uncaught Exception occurred');
 
 ?>
