@@ -93,9 +93,9 @@
 <body>
 
  <?php 
- echo $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
-    $so = "SO: " . $Browser['platform']; 
-    ?>
+    echo $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
+    echo $so = "SO: " . $Browser['platform']; 
+ ?>
 
 </body>
 </html>
