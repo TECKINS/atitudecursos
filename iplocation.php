@@ -1,14 +1,5 @@
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>IP Location</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-</head>
-<body>
-  <?php
-  /*
+<?php
+  
   $ curl ipinfo.io/8.8.8.8
 {
   "ip": "8.8.8.8",
@@ -20,7 +11,10 @@
   "country": "US",
   "phone": 650
 }
-*/
+
+  $ip = $_SERVER['REMOTE_ADDR'];
+$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+echo $details->city; // -> "Mountain View"
 
   $.get("https://ipinfo.io/json", function (response) {
       $("#ip").html("IP: " + response.ip);
@@ -30,6 +24,15 @@
 
   
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>IP Location</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+  
   
 <h3>Client side IP geolocation using <a href="http://ipinfo.io">ipinfo.io</a></h3>
 
