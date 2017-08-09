@@ -95,7 +95,7 @@
 <body>
 
  <?php 
-    echo $agente = "User Agent: " . $Browser['userAgent'];
+    echo nl2br($agente = "User Agent: " . $Browser['userAgent'] . "\n"); 
     echo $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
     echo $so = "SO: " . $Browser['platform']; 
     echo $pattern =  "Pattern: " . $Browser['pattern'];
