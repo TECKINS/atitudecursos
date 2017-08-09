@@ -10,11 +10,11 @@
   "region": "CA",
   "country": "US",
   "phone": 650
-}*/
+}
 
   $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo $details->city; // -> "Mountain View"
+echo $details->city; // -> "Mountain View"*/
 
   $.get("https://ipinfo.io/json", function (response) {
       $("#ip").html("IP: " + response.ip);
