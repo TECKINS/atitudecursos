@@ -1,4 +1,16 @@
 <?php
+  $ curl ipinfo.io/8.8.8.8
+{
+  "ip": "8.8.8.8",
+  "hostname": "google-public-dns-a.google.com",
+  "loc": "37.385999999999996,-122.0838",
+  "org": "AS15169 Google Inc.",
+  "city": "Mountain View",
+  "region": "CA",
+  "country": "US",
+  "phone": 650
+}
+
   $.get("https://ipinfo.io/json", function (response) {
       $("#ip").html("IP: " + response.ip);
       $("#address").html("Location: " + response.city + ", " + response.region);
