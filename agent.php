@@ -85,14 +85,15 @@
     
     ?>
     
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>User Agent</title>
 </head>
 <body>
 
- <?php $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
+ <?php 
+ echo $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
     $so = "SO: " . $Browser['platform']; 
     ?>
 
