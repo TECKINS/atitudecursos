@@ -79,9 +79,11 @@
             'platform'  => $platform,
             'pattern'    => $pattern
     );
-
+    
+    
     $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
     $so = "SO: " . $Browser['platform'];
+    
     
     ?>
     
@@ -93,8 +95,10 @@
 <body>
 
  <?php 
+    echo $agente = "User Agent: " . $Browser['userAgent'];
     echo $navegador = "Navegador: " . $Browser['name'] . " " . $Browser['version'];
     echo $so = "SO: " . $Browser['platform']; 
+    echo $pattern =  "Pattern: " . $Browser['pattern'];
  ?>
 
 </body>
