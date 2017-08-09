@@ -1,6 +1,6 @@
 <?php
   
-  $ curl ipinfo.io/8.8.8.8
+  /*$ curl ipinfo.io/8.8.8.8
 {
   "ip": "8.8.8.8",
   "hostname": "google-public-dns-a.google.com",
@@ -10,7 +10,7 @@
   "region": "CA",
   "country": "US",
   "phone": 650
-}
+}*/
 
   $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
