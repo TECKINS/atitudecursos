@@ -10,22 +10,65 @@
         margin: 0;
         padding: 0;
       }
-      #map {
+      .container {
         height: 100%;
+        position: relative;
+      }
+      input {
+        font-size: 12px;
+      }
+      h1 {
+        color: #525454;
+        font-size: 22px;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+      #hide-listings,
+      #show-listings {
+        width: 48%;
+      }
+      #map {
+        bottom:0px;
+        height: 100%;
+        left: 362px;
+        position: absolute;
+        right: 0px;
+      }
+      .options-box {
+        background: #fff;
+        border: 1px solid #999;
+        border-radius: 3px;
+        height: 100%;
+        line-height: 35px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+        width: 340px;
       }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    
+    <div class="container">
+      <div class="options-box">
+        <h1>Find Your New NYC Home</h1>
+        <div>
+          <input id="show-listings" type="button" value="Show Listings">
+          <input id="hide-listings" type="button" value="Hide Listings">
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    
     <script>
-     var map;
+     v      var map;
       // Create a new blank array for all the listing markers.
       var markers = [];
       function initMap() {
         // Constructor creates a new map - only center and zoom are required.
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7413549, lng: -73.9980244},
-          zoom: 13
+          zoom: 13,
+          mapTypeControl: false
         });
         // These are the real estate listings that will be shown to the user.
         // Normally we'd have these in a database instead.
@@ -38,15 +81,13 @@
           {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}}
         ];
         var largeInfowindow = new google.maps.InfoWindow();
-        var bounds = new google.maps.LatLngBounds();
         // The following group uses the location array to create an array of markers on initialize.
         for (var i = 0; i < locations.length; i++) {
           // Get the position from the location array.
           var position = locations[i].location;
           var title = locations[i].title;
           // Create a marker per location, and put into markers array.
-          var marker = new google.maps.Marker({
-            map: map,
+           var marker = new google.maps.Marker({
             position: position,
             title: title,
             animation: google.maps.Animation.DROP,
@@ -58,10 +99,9 @@
           marker.addListener('click', function() {
             populateInfoWindow(this, largeInfowindow);
           });
-          bounds.extend(markers[i].position);
         }
-        // Extend the boundaries of the map for each marker
-        map.fitBounds(bounds);
+        document.getElementById('show-listings').addEventListener('click', showListings);
+        document.getElementById('hide-listings').addEventListener('click', hideListings);
       }
       // This function populates the infowindow when the marker is clicked. We'll only allow
       // one infowindow which will open at the marker that is clicked, and populate based
@@ -73,9 +113,25 @@
           infowindow.setContent('<div>' + marker.title + '</div>');
           infowindow.open(map, marker);
           // Make sure the marker property is cleared if the infowindow is closed.
-          infowindow.addListener('closeclick',function(){
-            infowindow.setMarker = null;
+          infowindow.addListener('closeclick', function() {
+            infowindow.marker = null;
           });
+        }
+      }
+      // This function will loop through the markers array and display them all.
+      function showListings() {
+        var bounds = new google.maps.LatLngBounds();
+        // Extend the boundaries of the map for each marker and display the marker
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+          bounds.extend(markers[i].position);
+        }
+        map.fitBounds(bounds);
+      }
+      // This function will loop through the listings and hide them all.
+      function hideListings() {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
         }
       }
       
