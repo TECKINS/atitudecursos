@@ -13,10 +13,15 @@
       #map {
         height: 100%;
       }
+      #mapa {
+    width: 500px;
+    height: 400px;
+}
     </style>
   </head>
   <body>
     <div id="map"></div>
+    <div id="mapa"></div>
     <script>
       /*var map;
       function initMap() {
