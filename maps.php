@@ -156,7 +156,8 @@
           {title: 'Union Square Open Floor Plan', location: {lat: 40.7347062, lng: -73.9895759}},
           {title: 'East Village Hip Studio', location: {lat: 40.7281777, lng: -73.984377}},
           {title: 'TriBeCa Artsy Bachelor Pad', location: {lat: 40.7195264, lng: -74.0089934}},
-          {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}}
+          {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}},
+          {title: 'Sagrada Família, Barcelona, Spain', location: {lat: 41.4044991, lng: 2.1721009}}
         ];
         var largeInfowindow = new google.maps.InfoWindow();
         // Style the markers a bit. This will be our listing marker icon.
