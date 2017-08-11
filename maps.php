@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Google Maps</title>
     <style>
       html,
       body {
@@ -27,6 +26,12 @@
       #show-listings {
         width: 48%;
       }
+      hr {
+        background: #D0D7D9;
+        height: 1px;
+        margin: 20px 0 20px 0;
+        border: none;
+      }
       #map {
         bottom:0px;
         height: 100%;
@@ -44,10 +49,16 @@
         text-align: left;
         width: 340px;
       }
+      #pano {
+        width: 200px;
+        height: 200px;
+      }
+      .text {
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
-    
     <div class="container">
       <div class="options-box">
         <h1>Find Your New NYC Home</h1>
@@ -58,7 +69,6 @@
       </div>
       <div id="map"></div>
     </div>
-    
     <script>
       var map;
       // Create a new blank array for all the listing markers.
@@ -154,7 +164,6 @@
         // Create a "highlighted location" marker color for when the user
         // mouses over the marker.
         var highlightedIcon = makeMarkerIcon('FFFF24');
-        var largeInfowindow = new google.maps.InfoWindow();
         // The following group uses the location array to create an array of markers on initialize.
         for (var i = 0; i < locations.length; i++) {
           // Get the position from the location array.
@@ -192,13 +201,43 @@
       function populateInfoWindow(marker, infowindow) {
         // Check to make sure the infowindow is not already opened on this marker.
         if (infowindow.marker != marker) {
+          // Clear the infowindow content to give the streetview time to load.
+          infowindow.setContent('');
           infowindow.marker = marker;
-          infowindow.setContent('<div>' + marker.title + '</div>');
-          infowindow.open(map, marker);
           // Make sure the marker property is cleared if the infowindow is closed.
           infowindow.addListener('closeclick', function() {
             infowindow.marker = null;
           });
+          var streetViewService = new google.maps.StreetViewService();
+          var radius = 50;
+          // In case the status is OK, which means the pano was found, compute the
+          // position of the streetview image, then calculate the heading, then get a
+          // panorama from that and set the options
+          function getStreetView(data, status) {
+            if (status == google.maps.StreetViewStatus.OK) {
+              var nearStreetViewLocation = data.location.latLng;
+              var heading = google.maps.geometry.spherical.computeHeading(
+                nearStreetViewLocation, marker.position);
+                infowindow.setContent('<div>' + marker.title + '</div><div id="pano"></div>');
+                var panoramaOptions = {
+                  position: nearStreetViewLocation,
+                  pov: {
+                    heading: heading,
+                    pitch: 30
+                  }
+                };
+              var panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('pano'), panoramaOptions);
+            } else {
+              infowindow.setContent('<div>' + marker.title + '</div>' +
+                '<div>No Street View Found</div>');
+            }
+          }
+          // Use streetview service to get the closest streetview image within
+          // 50 meters of the markers position
+          streetViewService.getPanoramaByLocation(marker.position, radius, getStreetView);
+          // Open the infowindow on the correct marker.
+          infowindow.open(map, marker);
         }
       }
       // This function will loop through the markers array and display them all.
@@ -230,52 +269,11 @@
           new google.maps.Size(21,34));
         return markerImage;
       }
-      
- /*var geocoder;
-var map;
-var marker;
-
-  function initialize() {
-    var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
-    var options = {
-        zoom: 5,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    map = new google.maps.Map(document.getElementById("mapa"), options);
-
-    geocoder = new google.maps.Geocoder();
-
-    marker = new google.maps.Marker({
-        map: map,
-        draggable: true,
-    });
-
-    marker.setPosition(latlng);
-}
-
-// verifica se o navegador tem suporte a geolocalização
-if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position){ // callback de sucesso
-        // ajusta a posição do marker para a localização do usuário
-        marker.setPosition(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-    }, 
-    function(error){ // callback de erro
-       alert('Erro ao obter localização!');
-       console.log('Erro ao obter localização.', error);
-    });
-} else {
-    console.log('Navegador não suporta Geolocalização!');
-}
-
-$(document).ready(function () {
-    initialize();
-});*/
     </script>
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUrjcYDW8ztOKyw8_OCYl1vQRMVF8XgaQ&callback=initMap">
+        src=
+        "https://maps.googleapis.com/maps/api/js?key=MYAPIKEY&libraries=geometry&v=3&callback=initMap">
     </script>
 
   </body>
