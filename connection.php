@@ -17,7 +17,7 @@ try {
 catch(PDOException $e)
     {
     echo "Connection failed: " . $e->getMessage();
-    
+}
     
     // sql to create table
 $sql = "CREATE TABLE MyGuests (
