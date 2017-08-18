@@ -9,10 +9,10 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
      echo "Connected successfully"; 
     
-     $sql = "CREATE DATABASE u768531060_myDB";
+    // $sql = "CREATE DATABASE u768531060_myDB";
     // use exec() because no results are returned
-    $conn->exec($sql);
-    echo "Database created successfully<br>";
+    //$conn->exec($sql);
+    //echo "Database created successfully<br>";
     
     /* sql to create table
     $sql = "CREATE TABLE MyGuests (
