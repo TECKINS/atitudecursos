@@ -20,12 +20,12 @@ th {text-align: left;}
 <?php
 $q = intval($_GET['q']);
 
-$con = mysqli_connect('mysql.hostinger.com.br','u768531060_root', '1000atitudes', 'u768531060_users');
+$con = mysqli_connect('mysql.hostinger.com.br','u768531060_root', '1000atitudes');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"ajax_demo");
+mysqli_select_db($con,"u768531060_users");
 $sql="SELECT * FROM user WHERE id = '".$q."'";
 $result = mysqli_query($con,$sql);
 
