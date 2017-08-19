@@ -39,11 +39,11 @@ echo "<table>
 </tr>";
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
-    echo "<td>" . $row['FirstName'] . "</td>";
-    echo "<td>" . $row['LastName'] . "</td>";
-    echo "<td>" . $row['Age'] . "</td>";
-    echo "<td>" . $row['Hometown'] . "</td>";
-    echo "<td>" . $row['Job'] . "</td>";
+    echo "<td>" . $row['firstname'] . "</td>";
+    echo "<td>" . $row['lastname'] . "</td>";
+    echo "<td>" . $row['age'] . "</td>";
+    echo "<td>" . $row['hometown'] . "</td>";
+    echo "<td>" . $row['job'] . "</td>";
     echo "</tr>";
 }
 echo "</table>";
