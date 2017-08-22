@@ -58,7 +58,7 @@ $_SESSION['ip'] = $details->ip;
 $_SESSION['org'] = $details->org;
 $_SESSION['loc'] = $details->loc;
 $_SESSION['city'] = $details->city; 
-$_SESSION['region'] =$details->region; 
+$_SESSION['region'] = $details->region; 
 $_SESSION['country'] = $details->country;
 
 $ip = $details->ip;
@@ -95,6 +95,13 @@ $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, co
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposede.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
+	<style>
+	       #map {
+		height: 400px;
+		width: 100%;
+	       }
+    	</style>
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -199,6 +206,23 @@ $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, co
                 </div>
             </div>
         </div>
+	    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCarvSEZu-SUeDXnENIqhShvjJNZdMBeN0&callback=initMap">
+    </script>
     </div>
 
     <footer id="footer">
