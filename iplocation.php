@@ -139,11 +139,13 @@ session_start();  // Inicia a session
                                     <thead>
                                         <tr>
                                             <td class="col-lg-1"><strong>IP</strong></td>
-                                            <td class="col-lg-3"><strong>Aluno</strong></td>
-                                            <td class="col-lg-2"><strong>Curso</strong></td>
-                                            <td class="col-lg-2"><strong>Descriçao</strong></td>
-                                            <td class="col-lg-2"><strong>Data Início</strong></td>
-                                            <td class="col-lg-2"><strong>Data Término</strong></td>
+                                            <td class="col-lg-3"><strong>Hostname</strong></td>
+                                            <td class="col-lg-2"><strong>Localização</strong></td>
+                                            <td class="col-lg-2"><strong>Cidade</strong></td>
+                                            <td class="col-lg-2"><strong>Região</strong></td>
+                                            <td class="col-lg-2"><strong>País</strong></td>
+						<td class="col-lg-2"><strong>Phone</strong></td>
+						
                                             
                                         </tr>
                                     </thead>
@@ -153,7 +155,6 @@ session_start();  // Inicia a session
                                         <tr> 
                                             <td><?php echo $details->ip;  ?></td>
                                             <td><?php echo $details->hostname; ?></td>
-                                            <td><?php echo $details->hostname;?></td>
                                             <td><?php echo $details->loc;?></td>
                                             <td><?php echo $details->city; ?></td>
                                             <td><?php echo $details->region; ?></td>
