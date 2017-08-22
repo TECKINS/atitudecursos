@@ -1,6 +1,6 @@
 <?php
   
- /* $ curl ipinfo.io/8.8.8.8
+  $ curl ipinfo.io/8.8.8.8
 {
   "ip": "8.8.8.8",
   "hostname": "google-public-dns-a.google.com",
@@ -11,7 +11,7 @@
   "country": "US",
   "phone": 650
 }
-*/
+
 
   $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
@@ -26,6 +26,7 @@ echo $details->city; // -> "Mountain View"
 <html>
 <head>
 <title>IP Location</title>
+  <meta charset="utf-8">
   <script>
      $.get("https://ipinfo.io/json", function (response) {
       $("#ip").html("IP: " + response.ip);
