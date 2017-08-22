@@ -69,7 +69,7 @@ $city = $details->city;
 $region =$details->region; 
 $country = $details->country;
 
-$sql = mysqli_query($conexao, "INSERT INTO user (ip, org, loc, city, region, country, ultimo_acesso) 
+$sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, country, ultimo_acesso) 
 									VALUES('{$ip}', '{$org}', '{$loc}', '{$city}', 
 									'{$region}', '{$country}', now())") 
 									or die( mysql_error() );
