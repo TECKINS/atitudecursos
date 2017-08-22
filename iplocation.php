@@ -59,7 +59,7 @@ session_start();  // Inicia a session
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Certificado | Atitude Cursos</title>
+    <title>IP Location | Atitude Cursos</title>
     <link rel="stylesheet" href="css/nexus.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
 
@@ -139,12 +139,11 @@ session_start();  // Inicia a session
                                     <thead>
                                         <tr>
                                             <td class="col-lg-1"><strong>IP</strong></td>
-                                            <td class="col-lg-3"><strong>Hostname</strong></td>
+                                            <td class="col-lg-3"><strong>Org</strong></td>
                                             <td class="col-lg-2"><strong>Localização</strong></td>
                                             <td class="col-lg-2"><strong>Cidade</strong></td>
                                             <td class="col-lg-2"><strong>Região</strong></td>
                                             <td class="col-lg-2"><strong>País</strong></td>
-						<td class="col-lg-2"><strong>Phone</strong></td>
 						
                                             
                                         </tr>
@@ -154,12 +153,12 @@ session_start();  // Inicia a session
 									
                                         <tr> 
                                             <td><?php echo $details->ip;  ?></td>
-                                            <td><?php echo $details->hostname; ?></td>
+                                            <td><?php echo $details->org; ?></td>
                                             <td><?php echo $details->loc;?></td>
                                             <td><?php echo $details->city; ?></td>
                                             <td><?php echo $details->region; ?></td>
                                           <td><?php echo $details->country; ?></td>
-                                          <td><?php echo $details->phone;?></td>
+                                          
                                             
                                         </tr>
                                        
