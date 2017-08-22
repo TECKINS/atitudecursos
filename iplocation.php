@@ -50,7 +50,29 @@ $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 </html>
 -->
 <?php
+
+include "config.php";
+
 session_start();  // Inicia a session
+
+$_SESSION['ip'] = $details->ip;
+$_SESSION['org'] = $details->org;
+$_SESSION['loc'] = $details->loc;
+$_SESSION['city'] = $details->city; 
+$_SESSION['region'] =$details->region; 
+$_SESSION['country'] = $details->country;
+
+$ip = $details->ip;
+$org = $details->org;
+$loc = $details->loc;
+$city = $details->city; 
+$region =$details->region; 
+$country = $details->country;
+
+$sql = mysqli_query($conexao, "INSERT INTO user (ip, org, loc, city, region, country, ultimo_acesso) 
+									VALUES('{$ip}', '{$org}', '{$loc}', '{$city}', 
+									'{$region}', '{$country}', now())") 
+									or die( mysql_error() );
 ?>
 <!DOCTYPE html>
 <html lang="br">
@@ -139,7 +161,7 @@ session_start();  // Inicia a session
                                     <thead>
                                         <tr>
                                             <td class="col-lg-1"><strong>IP</strong></td>
-                                            <td class="col-lg-3"><strong>Org</strong></td>
+                                            <td class="col-lg-3"><strong>Organização</strong></td>
                                             <td class="col-lg-2"><strong>Localização</strong></td>
                                             <td class="col-lg-2"><strong>Cidade</strong></td>
                                             <td class="col-lg-2"><strong>Região</strong></td>
