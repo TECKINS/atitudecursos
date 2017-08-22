@@ -15,9 +15,14 @@
 
 
   $ip = $_SERVER['REMOTE_ADDR'];
-$details = json_decode(file_get_contents("http://ipinfo.io/8.8.8.8/json"));
-echo $details->city; // -> "Mountain View"
-
+$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+echo $details->ip; 
+echo $details->hostname;
+echo $details->loc; 
+echo $details->city;
+echo $details->region; 
+echo $details->country; 
+echo $details->phone; 
  
 
   
