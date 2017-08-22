@@ -12,7 +12,9 @@
   "phone": 650
 }
 */
+include "php/config.php";
 
+session_start();  // Inicia a session
 
   $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
@@ -51,9 +53,6 @@ $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 -->
 <?php
 
-include "config.php";
-
-session_start();  // Inicia a session
 
 $_SESSION['ip'] = $details->ip;
 $_SESSION['org'] = $details->org;
@@ -70,8 +69,7 @@ $region =$details->region;
 $country = $details->country;
 
 $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, country, ultimo_acesso) 
-									VALUES('{$ip}', '{$org}', '{$loc}', '{$city}', 
-									'{$region}', '{$country}', now())") 
+									VALUES('{$ip}', '{$org}', '{$loc}', '{$city}', '{$region}', '{$country}', now())") 
 									or die( mysql_error() );
 ?>
 <!DOCTYPE html>
