@@ -222,7 +222,7 @@ $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, co
 		    <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: $lat, lng: $long};
+        var uluru = {lat: <?php $lat?>, lng: <?php $long?>};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
           center: uluru
