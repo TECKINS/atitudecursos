@@ -68,6 +68,14 @@ $city = $details->city;
 $region =$details->region; 
 $country = $details->country;
 
+$latitude = substr('-1.4373,-48.4706', 0, 6); 
+$longitude = substr('-1.4373,-48.4706', 7,15); 
+
+echo $latitude;
+
+echo $longitude;
+
+
 $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, country, ultimo_acesso) 
 									VALUES('{$ip}', '{$org}', '{$loc}', '{$city}', '{$region}', '{$country}', now())") 
 									or die( mysql_error() );
