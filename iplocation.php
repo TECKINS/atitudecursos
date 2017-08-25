@@ -68,8 +68,11 @@ $city = $details->city;
 $region =$details->region; 
 $country = $details->country;
 
-$latitude = substr('-1.4373,-48.4706', 0, 6); 
-$longitude = substr('-1.4373,-48.4706', 7,15); 
+$latitude = substr('-1.4373,-48.4706', 0, 7); 
+$longitude = substr('-1.4373,-48.4706', 8,15); 
+
+$lat = substr($loc, 0, 7); 
+$long = substr($loc, 8,15); 
 
 echo $latitude;
 
