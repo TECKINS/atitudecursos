@@ -74,9 +74,13 @@ $longitude = substr('-1.4373,-48.4706', 8,15);
 $lat = substr($loc, 0, 7); 
 $long = substr($loc, 8,15); 
 
-echo $latitude;
+//echo $latitude;
 
-echo $longitude;
+//echo $longitude;
+
+echo $lat;
+
+echo $long;
 
 
 $sql = mysqli_query($conexao, "INSERT INTO users (ip, org, loc, city, region, country, ultimo_acesso) 
