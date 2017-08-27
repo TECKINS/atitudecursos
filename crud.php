@@ -1,4 +1,8 @@
-<script>
+<html>
+  <head>
+  <title>CRUD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script>
 $(document).ready(function() {
   $('#tblEditavel tbody tr td.editavel').dblclick(function() {
       if ($('td > input').length > 0) {
@@ -38,10 +42,6 @@ $(document).ready(function() {
 
   })
 </script>
-<html>
-  <head>
-  <title>CRUD</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <style>
     table {
       border-collapse: collapse;
