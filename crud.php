@@ -41,6 +41,7 @@ $(document).ready(function() {
 <html>
   <head>
   <title>CRUD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <style>
     table {
       border-collapse: collapse;
@@ -54,7 +55,6 @@ $(document).ready(function() {
   </style>
   </head>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <table id="tblEditavel">
   <thead>
     <tr>
