@@ -1,19 +1,28 @@
 <script>
-$(document).ready(function(){
+//$(document).ready(function(){
+  $(function () {
 
 
-  $("input.CEP").mask("99.999-999"); 
-  $("input.DN").mask("99/99/9999");
+  var input = {};
+  input.CEP = $("input.CEP");
+  input.DN= $("input.CEP");
 
+  var cancelar = $("#cancelar");
+  var nome= $("#nome");
+  var DN= $("#DN");
+  var email= $("#email");
+  var CEP= $("#CEP");
 
-  $('#cancelar').on('click', function(){
-    $('#nome').val('');
-    $('#DN').val('');	
-    $('#email').val('');
-    $('#CEP').val('');
+  input.CEP.mask("99.999-999"); 
+  input.DN.mask("99/99/9999");
 
-
+  cancelar.on('click', function(){
+      nome.val('');
+      DN.val(''); 
+      email.val('');
+      CEP.val('');
   });
+  
   $('#registrar').on('click', function(){
 
     var nomeVal = form1.nome.value;
@@ -37,7 +46,8 @@ $(document).ready(function(){
       {
 
 
-        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut" value="Alterar"/></td> <td><input type="button" class="salBut" value="Salvar"/></td><td><input type="button" class="ExBut" value="Excluir"/></td></tr>');
+        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td>
+                             <input type="button" class="AltBut" value="Alterar"/></td> <td><input type="button" class="salBut" value="Salvar"/></td><td><input type="button" class="ExBut" value="Excluir"/></td></tr>');
 
         $('#nome').val('');
         $('#DN').val('');	
@@ -47,9 +57,17 @@ $(document).ready(function(){
         //$('.salBut').hide();
 
 
-        $(".AltBut").bind("click", Editar);  
-        $(".salBut").bind("click", FunSal);
-        $(".ExBut").bind("click", Excluir);
+        //$(".AltBut").bind("click", Editar);  
+        //$(".salBut").bind("click", FunSal);
+        //$(".ExBut").bind("click", Excluir);
+        
+        var linha = $('<tr><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut" value="Alterar"/></td> <td><input type="button" class="salBut" value="Salvar"/></td><td><input type="button" class="ExBut" value="Excluir"/></td></tr>');
+
+        $(".AltBut", linha).on("click", Editar);  
+        $(".salBut", linha).on("click", FunSal);
+        $(".ExBut", linha).on("click", Excluir);
+
+        $("#tabCrud").append(linha);
 
 
         return true;
@@ -83,12 +101,10 @@ $(document).ready(function(){
     var tdCEP = par.children("td:nth-child(4)");
 
 
-
-
-    tdNome.html("<input type ='text' value='"+tdNome.html()+"'/td>");
-    tdEmail.html("<input type='text' id='txtEmail' value='"+tdEmail.html()+"'/>");
-    tdDN.html("<input type='text'id='txtDN' value='"+tdDN.html()+"'/>");
-    tdCEP.html("<input type='text'id='txtDN' value='"+tdCEP.html()+"'/>");
+    tdNome.html("<input type ='text' name='txtNome' value='"+tdNome.html()+"'/>");
+    tdEmail.html("<input type='text' name='txtEmail' value='"+tdEmail.html()+"'/>");
+    tdDN.html("<input type='text' name='txtDN' value='"+tdDN.html()+"'/>");
+    tdCEP.html("<input type='text' name='txtDN' value='"+tdCEP.html()+"'/>");
 
 
     //$('.salBut').show()
@@ -119,6 +135,10 @@ $(document).ready(function(){
     //$('.AltBut').show() //tr
     par.remove();
   };
+    
+    $("#tabCrud").on("click", ".AltBut", Editar);  
+    $("#tabCrud").on("click", ".salBut", FunSal);
+    $("#tabCrud").on("click", ".ExBut", Excluir);
 });
 </script>
 <html>
