@@ -1,9 +1,11 @@
 <html>
   <head>
   <title>CRUD</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://files.rafaelwendel.com/jquery.js"></script>
     <script type="text/javascript" src="http://files.rafaelwendel.com/jquery.maskedinput.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script>
      $(document).ready(function(){
 
@@ -43,7 +45,7 @@
       {
 
 
-        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut" value="Alterar"/></td> <td><input type="button" class="salBut" value="Salvar"/></td><td><input type="button" class="ExBut" value="Excluir"/></td></tr>');
+        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut btn btn-primary" value="Alterar"/></td> <td><input type="button" class="salBut btn btn-success" value="Salvar"/></td><td><input type="button" class="ExBut btn btn-danger" value="Excluir"/></td></tr>');
 
         $('#nome').val('');
         $('#DN').val('');	
