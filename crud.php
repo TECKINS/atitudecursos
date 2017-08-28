@@ -1,6 +1,10 @@
 <html>
   <head>
   <title>CRUD</title>
+    <style>
+    body {background-color: #FFE4B5;}
+    table.bordasimples {border-collapse: collapse;}
+  </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://files.rafaelwendel.com/jquery.js"></script>
@@ -129,10 +133,6 @@
   };
 });
   </script>
-  <style>
-    body {background-color: #FFE4B5;}
-    table.bordasimples {border-collapse: collapse;}
-  </style>
   </head>
 <body>
 <form name="form1" action="#" method="post">
