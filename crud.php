@@ -45,7 +45,7 @@
       {
 
 
-        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut btn btn-primary" value="Alterar"/></td> <td><input type="button" class="salBut btn btn-success" value="Salvar"/></td><td><input type="button" class="ExBut btn btn-danger disabled" value="Excluir"/></td></tr>');
+        $('#tabCrud').append('<tr"><td>'+ nomeVal +'</td> <td>'+ emailVal +'</td><td>'+ ddnVal +'</td><td>'+ cepVal +'</td> <td><input type="button" class="AltBut btn btn-primary" value="Alterar"/></td> <td><input type="button" class="salBut btn btn-success" value="Salvar"/></td><td><input type="button" class="ExBut btn btn-danger" value="Excluir"/></td></tr>');
 
         $('#nome').val('');
         $('#DN').val('');	
