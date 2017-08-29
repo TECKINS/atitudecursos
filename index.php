@@ -112,12 +112,12 @@ include("php/config.php");
         </div><!--/.center-->
         <ul class="portfolio-filter">
                 <li><a class="btn btn-primary active" href="#" data-filter=".info">Informática</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".prog">Programação</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".mac">Mecânica</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".emp">Empresa</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".port">Portuário</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".idi">Idiomas</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".exat">Exatas</a></li>
+                <li><a class="btn btn-primary" href="#" data-filter=".prog" disabled>Programação</a></li>
+                <li><a class="btn btn-primary disabled" href="#" data-filter=".mac" >Mecânica</a></li>
+                <li><a class="btn btn-primary disabled" href="#" data-filter=".emp">Empresa</a></li>
+                <li><a class="btn btn-primary disabled" href="#" data-filter=".port">Portuário</a></li>
+                <li><a class="btn btn-primary disabled" href="#" data-filter=".idi">Idiomas</a></li>
+                <li><a class="btn btn-primary disabled" href="#" data-filter=".exat">Exatas</a></li>
 
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
