@@ -46,13 +46,9 @@ protegePagina();
 <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
-      top: 0;
-      width: 100%;
+     top: 20px;
   }
 
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
 </style>
    
 </head>
@@ -60,7 +56,7 @@ protegePagina();
 	<?php include("../php/cabecalho.php"); ?>
 	
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+                <nav class="navbar-default navbar-side" data-spy="affix" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
