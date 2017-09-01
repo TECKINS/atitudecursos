@@ -49,7 +49,7 @@ protegePagina();
 	<?php include("../php/cabecalho.php"); ?>
 	
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+                <nav class="navbar-default navbar-side fixed" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
