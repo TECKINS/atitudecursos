@@ -60,7 +60,7 @@ protegePagina();
 	<?php include("../php/cabecalho.php"); ?>
 	
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" data-spy="affix" data-offset-top="197" role="navigation">
+                <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
