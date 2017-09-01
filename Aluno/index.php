@@ -43,20 +43,13 @@ protegePagina();
     <link href="../assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-<style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
-     top: 20px;
-  }
-
-</style>
    
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
 	
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" data-spy="affix" data-offset-top="100" role="navigation">
+                <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
