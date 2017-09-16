@@ -181,6 +181,10 @@ $total = mysqli_num_rows($dados);
                                 <div class="col-md-6 down-20">
                                 <label class="mini">Repetir nova senha</label>
                                     <input name="c_senha" onFocus="" class="form-control" type="text">
+                                </div>
+				    <div class="col-md-6 down-20">
+                                <label class="mini">Imagem do perfil</label>
+                                    <input type="file" name="img"  class="form-control">
                                 </div><br>
                                 <p>
                                     <button type="submit" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-send"></span> Enviar</button>
