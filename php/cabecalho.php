@@ -41,7 +41,7 @@
                             }
                             ?>
                         <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
+                            <a href="#">Ler todas as novas mensagens</a>
                         </li>
                             
                     </ul>
@@ -49,28 +49,22 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
+			    <?php
+                    $sql = mysqli_query($conexao,"SELECT id,mensagem,tipo,date FROM alerta ");
+					
+                    while($valor = mysqli_fetch_array($sql)) { 
+                    ?>
                         <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            <a href="#"><?=$valor["mensagem"]?> <span class="label label-<?=$valor["tipo"]?>">Alerta</span></a>
                         </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
+                        
                         <li class="divider"></li>
                         <li>
-                            <a href="#">View All</a>
+                            <a href="#">Ver tudo</a>
                         </li>
+			    <?php
+                            }
+                            ?>
                     </ul>
                 </li>
                 <li class="dropdown">
