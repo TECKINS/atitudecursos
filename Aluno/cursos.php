@@ -124,7 +124,7 @@ protegePagina();
                             <div class="portfolio-image">
                                 <img src="<?=$valor["link"]?>" alt="">
                                 <div class="overlay">
-                                    <?php echo "<a href=\"add.php?id=$id\"><button class='preview btn btn-success'><i class='fa fa-plus'></i> <?=$valor['acao']?> </button></a>"; ?>
+                                    <?php echo "<a href=\"add.php?id=$id\"><button class='preview btn btn-success'><i class='fa fa-plus'></i> $valor['acao'] </button></a>"; ?>
                                 </div>
                             </div>
                             <div class="blank">
