@@ -131,7 +131,7 @@ include("php/config.php");
                 </form>
             </ul><!--/#portfolio-filter-->
             <?php
-            $sql = mysqli_query($conexao,"SELECT id,nome,link,descricao,categoria,page FROM cad_cursos ");
+            $sql = mysqli_query($conexao,"SELECT id,nome,link,descricao,categoria,page FROM cad_cursos ORDER BY DESC ");
 
             while($valor = mysqli_fetch_array($sql)) {
             ?>
