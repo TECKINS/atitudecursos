@@ -55,7 +55,7 @@
                     while($valor = mysqli_fetch_array($sql)) { 
                     ?>
                         <li>
-                            <a href="#"><?=$valor["mensagem"]?> <span class="label label-<?=$valor["tipo"]?>">Alerta</span></a>
+                            <a href="#"><span class="label label-<?=$valor["tipo"]?>"><?=$valor["mensagem"]?></span></a>
                         </li>
                         
                         <li class="divider"></li>
