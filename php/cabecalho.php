@@ -12,7 +12,7 @@
             </div>
             <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
 <form class="navbar-form navbar-left" role="search">
-                          <div class="form-group navbar-left">
+                          <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
                           </div>
                           <button type="submit" class="btn btn-success">Buscar</button>
