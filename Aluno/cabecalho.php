@@ -1,4 +1,4 @@
-﻿<div id="wrapper">
+<div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -10,8 +10,14 @@
                 <!--<a class="navbar-brand" href="index.html"><img src="../images/logo.png"/></a>-->
                     <a class="navbar-brand" href="index.html"><img src="../images/logo.png"/></a>
             </div>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
             <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
-
+                
  <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
