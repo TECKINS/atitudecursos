@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 define('BD_USER', 'u768531060_root');
 define('BD_PASS', '');
