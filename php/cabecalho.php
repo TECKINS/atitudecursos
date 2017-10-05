@@ -10,12 +10,6 @@
                 <!--<a class="navbar-brand" href="index.html"><img src="../images/logo.png"/></a>-->
                     <a class="navbar-brand" href="index.php"><img src="../images/logo.png"/></a>
             </div>
-		<form class="navbar-form navbar-left" role="search">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                          </div>
-                          <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
             <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
 <form class="navbar-form navbar-left" role="search">
                           <div class="form-group">
