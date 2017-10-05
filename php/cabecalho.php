@@ -17,7 +17,12 @@
                           <button type="submit" class="btn btn-default">Submit</button>
                         </form>
             <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
-
+<form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                          </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
  <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                     <?php
