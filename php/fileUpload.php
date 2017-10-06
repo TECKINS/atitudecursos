@@ -7,6 +7,9 @@
 
 <body>
 <?php
+	include "config.php";
+	
+	$id = $_SESSION['id'];
 // verifica se foi enviado um arquivo 
 if(isset($_FILES['arquivo']['name']) && $_FILES["arquivo"]["error"] == 0)
 {
@@ -43,6 +46,9 @@ if(isset($_FILES['arquivo']['name']) && $_FILES["arquivo"]["error"] == 0)
 		{
 			echo "Arquivo salvo com sucesso em : <strong>" . $destino . "</strong><br />";
 			echo "<img src=\"" . $destino . "\" />";
+			$sql = mysqli_query($conexao, "INSERT INTO aluno (img) 
+									VALUES('{$destino}') WHERE id = '{$id}'") 
+									or die( mysql_error() );
 		}
 		else
 			echo "Erro ao salvar o arquivo. Aparentemente você não tem permissão de escrita.<br />";
