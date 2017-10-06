@@ -5,6 +5,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.footer {
+    padding: 70px 0;
+    padding-bottom: 30px;
+    background: #161616;
+}
+
  #wrapper {
     width: 100%;
     background:#202020;
