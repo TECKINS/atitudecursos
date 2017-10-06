@@ -46,7 +46,7 @@
               <i class="fa fa-facebook"></i> </a> </li> <li> <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus"> 
             <i class="fa fa-google-plus"></i> </a> </li> </ul> 
           <a class="btn btn-primary btn-lg" href="/contato">Fale Conosco</a> </div><!--/col-md-3--> <!-- End Address --> </div> </div> </div><!--/footer--> 
-  <div class="copyright"> 
+  <div class="copyright" text-align: center; color: #ffffff; background: #202020;> 
     <div class="container"> 
       <div class="col-lg-12 col-md-12 col-sm-12"> 
         <p> 2017 © Atitude Cursos. Todos os Direitos Reservados. <a href="/politica-de-privacidade" class="">Política de Privacidade</a> | 
