@@ -112,7 +112,7 @@ $total = mysqli_num_rows($dados);
                             </div>
                             <!-- Contact Form -->
                             <div class="col-md-12 row">
-                            <form name="contact-form" method="post" action="../php/altera.php">
+                            <form name="contact-form" method="post" action="../php/altera.php" enctype="multipart/form-data">
                                 <div class="col-md-6 down-20">
                                 <label class="mini">Nome Completo</label>
                                     <input name="nome" class="form-control" type="text" value="<?=$linha['nome']?>" required>
