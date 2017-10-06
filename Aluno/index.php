@@ -92,7 +92,7 @@ protegePagina();
                  <!-- /. ROW  -->
                   <hr />
                 <div class="row">
-                <div class="col-md-4 col-sm-7 col-xs-7">           
+                <div class="col-md-4 col-sm-7 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span>
                     <i class="icon-box bg-color-red set-icon fa fa-laptop"></i>
@@ -103,7 +103,7 @@ protegePagina();
                 </div>
              </div>
 		     </div>
-                    <div class="col-md-4 col-sm-7 col-xs-7">           
+                    <div class="col-md-4 col-sm-7 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span >
                     <i class="icon-box bg-color-green set-icon fa fa-gears"></i>
@@ -114,7 +114,7 @@ protegePagina();
                 </div>
              </div>
 		     </div>
-                    <div class="col-md-4 col-sm-7 col-xs-7">           
+                    <div class="col-md-4 col-sm-7 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span>
                     <i class="icon-box bg-color-blue set-icon fa fa-mortar-board"></i>
@@ -150,7 +150,7 @@ protegePagina();
 		     </div>
                     
                     
-                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="panel back-dash">
                                <i class="fa fa-shield fa-3x"></i><strong> &nbsp; Autenticação do Certificado</strong>
                              <p class="text-muted">Seu certificado possui um número unico, que se encontra na parte de trás do 
