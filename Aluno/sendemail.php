@@ -1,26 +1,18 @@
-﻿<?php
+<?php
 session_start();
 
 include("../php/config.php");
 protegePagina();
 
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Entraremos em contato em ate 48 horas!'
-	);
+
 
     $name = $_SESSION['nome']; 
-    $email = $_SESSION['email']; 
-    $subject = @trim(stripslashes($_POST['assunto'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
+    $email = $_SESSION['email'];
+    $message = $_POST['message'];
 
-    $email_from = $email;
-    $email_to = 'atituderhcursos@gmail.com';
+    $sql = mysqli_query($conexao, "INSERT INTO mensagem (remetente, destinatario, message, date)
+    VALUES('{$name}', '{$email}', '{$message}', now())");
 
-    $body = 'Nome: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Assunto: ' . $subject . "\n\n" . 'Mensagem: ' . $message;
-
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
-
-    echo json_encode($status);
-    die; 
+    echo "<script> URL=javascript=history.back();</script>";
+	
+?>
