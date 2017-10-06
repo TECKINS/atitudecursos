@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Upload</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" action="fileUpload.php">
+   Selecione uma imagem: <input name="arquivo" type="file" />
+   <br />
+   <input type="submit" value="Salvar" />
+</form>
+
+</body>
+</html>
+
 <?php
 /******
  * Upload de imagens
@@ -29,7 +44,7 @@ if ( isset( $_FILES[ 'arquivo' ][ 'name' ] ) && $_FILES[ 'arquivo' ][ 'error' ] 
         $novoNome = uniqid ( time () ) . '.' . $extensao;
  
         // Concatena a pasta com o nome
-        $destino = 'imagens / ' . $novoNome;
+        $destino = '../images/ ' . $novoNome;
  
         // tenta mover o arquivo para o destino
         if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
@@ -45,17 +60,4 @@ if ( isset( $_FILES[ 'arquivo' ][ 'name' ] ) && $_FILES[ 'arquivo' ][ 'error' ] 
 else
     echo 'Você não enviou nenhum arquivo!';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<title>File Upload</title>
-</head>
-<body>
-<form method="post" enctype="multipart/form-data" action="fileUpload.php">
-   Selecione uma imagem: <input name="arquivo" type="file" />
-   <br />
-   <input type="submit" value="Salvar" />
-</form>
 
-</body>
-</html>
