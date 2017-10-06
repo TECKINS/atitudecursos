@@ -45,7 +45,7 @@
             <li> <a href="http://www.facebook.com/share.php?u=http://www.atitudecursos.org" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="Facebook Atitude Cursos" data-original-title="Facebook"> 
               <i class="fa fa-facebook"></i> </a> </li> <li> <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus"> 
             <i class="fa fa-google-plus"></i> </a> </li> </ul> 
-          <a class="btn" href="/contato">Fale Conosco</a> </div><!--/col-md-3--> <!-- End Address --> </div> </div> </div><!--/footer--> 
+          <a class="btn btn-success btn-lg" href="/contato">Fale Conosco</a> </div><!--/col-md-3--> <!-- End Address --> </div> </div> </div><!--/footer--> 
   <div class="copyright"> 
     <div class="container"> 
       <div class="col-lg-12 col-md-12 col-sm-12"> 
