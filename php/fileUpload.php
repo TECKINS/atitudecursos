@@ -48,8 +48,8 @@ if(isset($_FILES['arquivo']['name']) && $_FILES["arquivo"]["error"] == 0)
 			echo "Arquivo salvo com sucesso em : <strong>" . $destino . "</strong><br />";
 			echo "<img src=\"" . $destino . "\" />";
 			
-			$sql = mysqli_query($conexao, "INSERT INTO aluno (img, data_ultimo_login) 
-									VALUES('{$destino}', now) WHERE id = '{$id}'");
+			$sql = mysqli_query($conexao, "INSERT INTO aluno (img) 
+									VALUES('{$destino}') WHERE id = '{$id}'");
 		}
 		else
 			echo "Erro ao salvar o arquivo. Aparentemente você não tem permissão de escrita.<br />";
