@@ -1,7 +1,7 @@
 <div class="footer" id="footer">
   <div class="footer hidden-sm hidden-xs"> 
-    <div class="container-pesquisa"> 
-      <div class="row margin-left-10 margin-right-10"> 
+    <div class="container"> 
+      <div class="row"> 
         <!-- About --> <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 text-justify"> 
         <div class="headline">
           <h2 style="color: #000000; font-weight: 600;">Atitude Cursos</h2></div> 
