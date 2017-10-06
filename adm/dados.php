@@ -157,6 +157,7 @@ $total = mysqli_num_rows($dados);
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
+	<?php include("../php/rodape.php"); ?>
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
