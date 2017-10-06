@@ -1,5 +1,5 @@
 <div class="footer" id="footer">
-  <div class="footer" style="background: #202020; padding: 70px 0; padding-bottom: 30px;"> 
+  <div class="footer" style="background: #4D4D4D; padding: 70px 0; padding-bottom: 30px;"> 
     <div class="container"> 
       <div class="row"> 
         <!-- About --> <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 text-justify"> 
@@ -29,13 +29,13 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40 text-center"> 
             <span class="" style="font-size: 24px; color: #ffffff;">
               <i class="glyphicon glyphicon-phone-alt">&nbsp;</i>(91)&nbsp;3754-2307</span>
-            <span class="" style="font-size: 24px">
+            <span class="" style="font-size: 24px; color: #ffffff;">
               <i class="fa fa-whatsapp">&nbsp;</i>WhatsApp(91)&nbsp;98717-2307</span><br> 
             <span class="" style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 09:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span> </div> </div> <!-- End Latest --> <!-- Address --> 
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 endereco"> 
           <div class="headline">
             <h2 style="color: #ffffff; font-weight: 600;">Nossos Contatos</h2></div> 
-          <address class="md-margin-bottom-40"> 
+          <address class="md-margin-bottom-40" style="color: #ffffff;"> 
             <span class="" style="font-size: 18px; color: #ffffff;"> 
               <b>Atitude Cursos<br>CNPJ: 18.135.450/0001-12</b></span> <br><br>
             Rua Germano Aranha, Qd. 294 Lt. 03 - Vila dos Cabanos - Barcarena-PA CEP: 68.447-000 <br><br> 
