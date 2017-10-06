@@ -14,7 +14,7 @@
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 md-margin-bottom-40"> 
             <ul class="list-unstyled link-list"> 
               <li class="padding-bottom-5 padding-top-5">
-                <a href="/validacao-certificado" title="Autentique aqui o registro do seu certificado" style="color: #ffffff;">Autenticar Certificado</a></li>
+                <a href="/validacao-certificado" title="Autentique aqui o registro do seu certificado" style="color:>Autenticar Certificado</a></li>
               <li class="padding-bottom-5 padding-top-5"><a href="/para-empresas" title="Pacotes de cursos especiais para empresas">Para Empresas</a></li> 
               <li class="padding-bottom-5 padding-top-5"><a href="/seja-um-instrutor" title="Venha fazer parte de nossa equipe de colaboradores">Seja um Instrutor Atitude Cursos</a></li> 
               <li class="padding-bottom-5 padding-top-5" ><a href="/blog" title="Conheça nosso blog com várias dicas de estudos">Atitude Cursos Blog</a></li> 
@@ -22,24 +22,24 @@
           <!--/col-md-3--> <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 md-margin-bottom-40"> 
           <ul class="list-unstyled link-list"> 
             <li class="padding-bottom-5 padding-top-5">
-              <a href="/cursos-rapido-gratis-online-com-certificado" title="Conheça os locais onde pode usar seu Certificado" style="color: #ffffff;">10 locais para usar o Certificado</a></li> 
+              <a href="/cursos-rapido-gratis-online-com-certificado" title="Conheça os locais onde pode usar seu Certificado">10 locais para usar o Certificado</a></li> 
             <li class="padding-bottom-5 padding-top-5"><a href="/blog/prova-de-titulo-de-educacao-continuada" title="Veja como aplicar seu Certificado em Educação Continuada">Educação Continuada</a></li> 
             <li class="padding-bottom-5 padding-top-5"><a href="/cursos-online-com-certificado" title="Conheça do 5 principais motivos para fazer um Curso Online">5 Motivos para fazer um Curso Online</a></li> 
             <li class="padding-bottom-5 padding-top-5"><a href="/doacao" title="Você pode apoiar nosso site fazendo uma doação.">Faça uma Doação</a></li> <li class="padding-bottom-5 padding-top-5"><a href="/nosso-certificado" title="Conheça do Modelo do seu Certificado.">Modelo do Certificado</a></li> </ul> </div><!--/col-md-3--> 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40 text-center"> 
-            <span class="" style="font-size: 24px">
+            <span class="" style="font-size: 24px; color: #ffffff;">
               <i class="glyphicon glyphicon-phone-alt">&nbsp;</i>(91)&nbsp;3754-2307</span>
             <span class="" style="font-size: 24px">
               <i class="fa fa-whatsapp">&nbsp;</i>WhatsApp(91)&nbsp;98717-2307</span><br> 
-            <span class="color-red" style="font-size: 14px">Segunda a Sexta de 09:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span> </div> </div> <!-- End Latest --> <!-- Address --> 
+            <span class="" style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 09:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span> </div> </div> <!-- End Latest --> <!-- Address --> 
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 endereco"> 
           <div class="headline">
-            <h2 style="color: #000000; font-weight: 600;">Nossos Contatos</h2></div> 
+            <h2 style="color: #ffffff; font-weight: 600;">Nossos Contatos</h2></div> 
           <address class="md-margin-bottom-40"> 
-            <span class="" style="font-size: 18px"> 
+            <span class="" style="font-size: 18px; color: #ffffff;"> 
               <b>Atitude Cursos<br>CNPJ: 18.135.450/0001-12</b></span> <br><br>
             Rua Germano Aranha, Qd. 294 Lt. 03 - Vila dos Cabanos - Barcarena-PA CEP: 68.447-000 <br><br> 
-            <span class=""> Email: 
+            <span class="" style="color: #ffffff;"> Email: 
               <span class="">atendimento@atitudecursos.org</span> </span> </address> 
           <ul class="footer-socials list-inline" style="font-size: 24px"> 
             <li> <a href="http://www.facebook.com/share.php?u=http://www.atitudecursos.org" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="Facebook Atitude Cursos" data-original-title="Facebook"> 
