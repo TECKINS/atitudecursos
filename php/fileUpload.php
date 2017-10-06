@@ -41,14 +41,13 @@ if(isset($_FILES['arquivo']['name']) && $_FILES["arquivo"]["error"] == 0)
 		// Concatena a pasta com o nome
 		$destino = '../images/' . $novoNome; 
 		
+		$sql = mysqli_query($conexao, "INSERT INTO aluno (img, data_ultimo_login) 
+									VALUES('{$destino}', now) WHERE id = '{$id}'"));
 		// tenta mover o arquivo para o destino
 		if( @move_uploaded_file( $arquivo_tmp, $destino  ))
 		{
 			echo "Arquivo salvo com sucesso em : <strong>" . $destino . "</strong><br />";
 			echo "<img src=\"" . $destino . "\" />";
-			$sql = mysqli_query($conexao, "INSERT INTO aluno (img) 
-									VALUES('{$destino}') WHERE id = '{$id}'") 
-									or die( mysql_error() );
 		}
 		else
 			echo "Erro ao salvar o arquivo. Aparentemente você não tem permissão de escrita.<br />";
