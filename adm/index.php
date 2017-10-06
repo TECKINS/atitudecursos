@@ -86,10 +86,10 @@ protegePaginaAdm();
                         <h5><?php echo "Bem vindo <strong>". $_SESSION['nome'] ."</strong>  "?></h5>
                     </div>
                 </div>              
-                 <!-- /. ROW  -->
+                  <!-- /. ROW  -->
                   <hr />
                 <div class="row">
-                <div class="col-md-4 col-sm-7 col-xs-7">           
+                <div class="col-md-4 col-sm-12 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span>
                     <i class="icon-box bg-color-red set-icon fa fa-laptop"></i>
@@ -100,7 +100,7 @@ protegePaginaAdm();
                 </div>
              </div>
 		     </div>
-                    <div class="col-md-4 col-sm-7 col-xs-7">           
+                    <div class="col-md-4 col-sm-12 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span >
                     <i class="icon-box bg-color-green set-icon fa fa-gears"></i>
@@ -111,10 +111,10 @@ protegePaginaAdm();
                 </div>
              </div>
 		     </div>
-                    <div class="col-md-4 col-sm-7 col-xs-7">           
+                    <div class="col-md-4 col-sm-12 col-xs-12">           
 			<div class="panel panel-back noti-box">
                 <span>
-                    <i class="icon-box bg-color-blue set-icon fa fa-certificate"></i>
+                    <i class="icon-box bg-color-blue set-icon fa fa-mortar-board"></i>
                 </span>
                 <div class="text-box" >
                     <p class="main-text">Certificado</p>
@@ -147,7 +147,7 @@ protegePaginaAdm();
 		     </div>
                     
                     
-                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="panel back-dash">
                                <i class="fa fa-shield fa-3x"></i><strong> &nbsp; Autenticação do Certificado</strong>
                              <p class="text-muted">Seu certificado possui um número unico, que se encontra na parte de trás do 
@@ -170,13 +170,13 @@ protegePaginaAdm();
                             Introdução a Plataforma da Atidude Cursos
                         </div>
                         
-                            <video width="745" height="390" poster="../assets/intro/capa.png" controls>
+                            <video class="col-md-12 col-sm-12 col-xs-12" width="745" height="390" poster="../assets/intro/capa.png" controls>
                             <source src="../assets/intro/intro.mp4" type="video/mp4">
                             </video>
                         
                     </div>            
                 </div>
-                   <div class="col-md-3 col-sm-12 col-xs-12">                       
+                    <div class="col-md-3 col-sm-12 col-xs-12">                       
                     <div class="panel panel-primary text-center no-boder bg-color-green">
                         <div class="panel-body">
                             <i class="fa fa-bar-chart-o fa-5x"></i>
@@ -271,8 +271,9 @@ protegePaginaAdm();
 
                     </div>
                 </div>
-
+		    
     </div>
+		
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
