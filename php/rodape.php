@@ -1,5 +1,5 @@
 <div class="footer" id="footer">
-  <div class="footer" style="background: #202020"> 
+  <div class="footer" style="background: #202020; padding: 70px 0; padding-bottom: 30px;"> 
     <div class="container"> 
       <div class="row"> 
         <!-- About --> <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 text-justify"> 
