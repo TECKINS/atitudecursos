@@ -284,8 +284,8 @@ protegePagina();
                         <div class="panel-body">
 						<p style="text-align:justify">Esta NR tem por objetivo estabelecer os requisitos mínimos para identificação de espaços confinados e o reconhecimento, avaliação, monitoramento e controle dos riscos existentes, de forma a garantir permanentemente a segurança e saúde dos trabalhadores e que interagem direta ou indiretamente nesses espaços.
 							</br>Espaço confinado é qualquer área ou ambiente não projetado para ocupação humana contínua, que possua meios limitados de entrada e saída, cuja ventilação existente é insuficiente para remover contaminantes ou onde possa existir a deficiência ou enriquecimento de oxigênio.</p>
-                  <iframe src="//www.slideshare.net/slideshow/embed_code/key/ih4zsuzD9tfdNi" width="980" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></div>
-                            <iframe width="980" width="560" height="551" height="315" src="https://www.youtube.com/embed/qJl1lU8rQ5g" frameborder="0" allowfullscreen></iframe>
+                         <iframe src="//www.slideshare.net/slideshow/embed_code/key/7pJC1gHC1iHryK" width="980" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></div>
+			 <iframe width="980" width="560" height="551" height="315" src="https://www.youtube.com/embed/Hnsc33ok9mQ" frameborder="0" allowfullscreen></iframe>
                             <br>
                             <br>
                             <br>
