@@ -82,7 +82,24 @@ protegePagina();
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Mais Cursos</h2>   
+			    <!-- breadcrumb -->
+					<ul class="breadcrumb">
+        <li>
+        <i class="fa fa-home"></i>
+        <a href="../index.php">Home</a>
+                    <i class="icon-angle-right"></i>
+            </li>
+
+                                <li>
+                                                            <a href="index.php">
+                            Painel Inicial                       </a>
+                                                                        <i class="icon-angle-right"></i>
+                            </li>
+                                
+                        
+    </ul>
+	<!-- breadcrumb -->
+                     <h2>Certificados</h2>   
                         <h5><?php echo "Olá <strong>". $_SESSION['nome'] ."</strong>, aqui você encontra os certificados dos cursos que você concluiu."?></h5>
                     </div>
                 </div>
