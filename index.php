@@ -122,12 +122,10 @@ include("php/config.php");
                 <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".prog" style="width:100%;" disabled="">Programação</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".adm" style="width:100%;" disabled="">Administração</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".idi" style="width:100%">Idiomas</a></li>
                 
 
-                <form class="navbar-form navbar-left col-md-3 col-sm-6 col-xs-12" role="search" style="width:100%;">
-                    <div class="form-group" style="width:50%;">
-                        <input type="text" placeholder="Nome do Curso ..." class="form-control" style="width:300px;">
-                    </div>
-                    &nbsp;
-                    <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>
+                <form class="navbar-form navbar-left" role="search" style="width:100%;">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome do Curso ..." class="form-control" style="width:400px; margin: 20px;">
+                    </div><button type="submit" class="btn btn-danger" style="width:80px;"><i class="fa fa-search"></i></button>
                 </form>
         </ul><!--/#portfolio-filter-->
             <?php
