@@ -95,20 +95,18 @@ protegePagina();
             <div class="box first">
                 
                 <ul class="portfolio-filter">
-                    <li><a class="btn btn-info active" href="#" data-filter=".info">Informática</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".bootstrap">Programação</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".html">Mecânica</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".wordpress">Empresa</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".wordpress">Portuário</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".wordpre">Idiomas</a></li>
-                    <li><a class="btn btn-info" href="#" data-filter=".wordpress">Exatas</a></li>
-                    
-                    <form class="navbar-form navbar-right" role="search">
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".info" style="width:100%;">Informática</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary" href="#" data-filter=".nr" style="width:100%;">Normas Regulamentadoras</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".mac" style="width:100%;">Mecânica</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".emp" style="width:100%">Empresa</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".port" style="width:100%">Portuário</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".prog" style="width:100%;" disabled="">Programação</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".adm" style="width:100%;" disabled="">Administração</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".idi" style="width:100%">Idiomas</a></li>
+                
+
+                <form class="navbar-form navbar-left" role="search" style="width:100%;">
                     <div class="form-group">
-                        <input type="text" placeholder="Nome do Curso ..." class="form-control">
-                    </div>
-                    &nbsp; 
-                    <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Nome do Curso ..." class="form-control" style="width:400px; margin: 20px;">
+                    </div><button type="submit" class="btn btn-danger" style="width:80px;"><i class="fa fa-search"></i></button>
                 </form>
 
                     <?php
