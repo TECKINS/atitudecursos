@@ -90,9 +90,14 @@ protegePagina();
                     <i class="icon-angle-right"></i>
             </li>
 
-                                <li>
+                            <li>
                                                             <a href="index.php">
                             Painel Inicial                       </a>
+                                                                        <i class="icon-angle-right"></i>
+                            </li>
+			    <li>
+                                                            <a href="certificados.php">
+                            Certificados                       </a>
                                                                         <i class="icon-angle-right"></i>
                             </li>
                                 
