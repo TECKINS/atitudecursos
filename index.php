@@ -114,22 +114,22 @@ include("php/config.php");
           <p class="lead">Diversos cursos para atender suas necessidades e interesses.</p>
         </div><!--/.center-->
         <ul class="portfolio-filter">
-                <li><a class="btn btn-primary active" href="#" data-filter=".info">Informática</a></li>
-                <li><a class="btn btn-primary" href="#" data-filter=".prog" disabled>Programação</a></li>
-                <li><a class="btn btn-primary disabled" href="#" data-filter=".mac" >Mecânica</a></li>
-                <li><a class="btn btn-primary disabled" href="#" data-filter=".emp">Empresa</a></li>
-                <li><a class="btn btn-primary disabled" href="#" data-filter=".port">Portuário</a></li>
-                <li><a class="btn btn-primary disabled" href="#" data-filter=".idi">Idiomas</a></li>
-                <li><a class="btn btn-primary disabled" href="#" data-filter=".exat">Exatas</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".info" style="width:100%;">Informática</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary" href="#" data-filter=".nr" style="width:100%;">Normas Regulamentadoras</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".mac" style="width:100%;">Mecânica</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".emp" style="width:100%">Empresa</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".port" style="width:100%">Portuário</a></li>
+                <li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".prog" style="width:100%;" disabled="">Programação</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary active" href="#" data-filter=".adm" style="width:100%;" disabled="">Administração</a></li><li class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5px;"><a class="btn btn-primary disabled" href="#" data-filter=".idi" style="width:100%">Idiomas</a></li>
+                
 
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nome do Curso ..." class="form-control">
+                <form class="navbar-form navbar-left col-md-3 col-sm-6 col-xs-12" role="search" style="width:100%;">
+                    <div class="form-group" style="width:50%;">
+                        <input type="text" placeholder="Nome do Curso ..." class="form-control" style="width:300px;">
                     </div>
                     &nbsp;
                     <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>
                 </form>
-            </ul><!--/#portfolio-filter-->
+        </ul><!--/#portfolio-filter-->
             <?php
             $sql = mysqli_query($conexao,"SELECT id,nome,link,descricao,categoria,page FROM cad_cursos ORDER BY id DESC ");
 
