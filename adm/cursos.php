@@ -92,6 +92,28 @@ $total = mysqli_num_rows($dados);
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
+			    <!-- breadcrumb -->
+					<ul class="breadcrumb">
+        <li>
+        <i class="fa fa-home"></i>
+        <a href="../index.php">Home</a>
+                    <i class="icon-angle-right"></i>
+            </li>
+
+                            <li>
+                                                            <a href="index.php">
+                            Painel Inicial                       </a>
+                                                                        <i class="icon-angle-right"></i>
+                            </li>
+			    <li>
+                                                            <a href="cursos.php">
+                            Cadastramento de Cursos                       </a>
+                                                                        <i class="icon-angle-right"></i>
+                            </li>
+                                
+                        
+    </ul>
+	<!-- breadcrumb -->
                      <h2>CADASTRAMENTO DE CURSOS</h2>   
                         <h5><?php echo "Olá <strong>". $_SESSION['nome'] ."</strong>"?></h5>
                     </div>
