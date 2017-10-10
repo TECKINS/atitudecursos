@@ -154,6 +154,7 @@ include("php/config.php");
                 ?>
 
             </ul>
+                                    <div style="clear:both;"></div>
           <!-- /.row -->
         </div><!--/.box-->
     </div><!--/.container-->
