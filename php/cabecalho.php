@@ -78,10 +78,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo $_SESSION['nome']?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="perfil.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            <a href="email.php"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         </li>
                         <li>
                             <a href="dados.php"><i class="fa fa-fw fa-gear"></i> Configuração</a>
