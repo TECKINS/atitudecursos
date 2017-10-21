@@ -190,7 +190,7 @@ protegePagina();
                                <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Introdução a Plataforma da Atidude Cursos
+                            Introdução a Plataforma da Atitude Cursos
                         </div>
 
                             <!--<video class="col-md-12 col-sm-12 col-xs-12" width="745" height="390" poster="../assets/intro/capa.png" controls>
