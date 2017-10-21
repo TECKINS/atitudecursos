@@ -193,9 +193,11 @@ protegePagina();
                             Introdução a Plataforma da Atidude Cursos
                         </div>
 
-                            <video class="col-md-12 col-sm-12 col-xs-12" width="745" height="390" poster="../assets/intro/capa.png" controls>
+                            <!--<video class="col-md-12 col-sm-12 col-xs-12" width="745" height="390" poster="../assets/intro/capa.png" controls>
                             <source src="../assets/intro/intro.mp4" type="video/mp4">
-                            </video>
+                            </video>-->
+			    
+			    <iframe class="col-md-12 col-sm-12 col-xs-12" width="800" height="450" src="https://www.powtoon.com/embed/bFOp7tmM1Zv/" frameborder="0"></iframe>
 
                     </div>
                 </div>
