@@ -285,7 +285,7 @@ protegePagina();
                                             <td>4</td>
                                             <td>Marlon</td>
                                             <td>Pontes</td>
-                                            <td>Cientista da Computação</td>
+                                            <td>Engenharia da Computação</td>
                                             <td>Sim</td>
                                         </tr>
                                     </tbody>
