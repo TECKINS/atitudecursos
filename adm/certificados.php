@@ -148,11 +148,11 @@ $total = mysqli_num_rows($dados);
                                 </div>
                                 <label class="mini">Data de Inicio</label>
                                 <div class="row">
-                                    <input name="datainicio" class="form-control" type="text">
+                                    <input type="date" name="datainicio" class="form-control">
                                 </div>
                                 <label class="mini">Data de Termino</label>
                                 <div class="row">
-                                    <input name="datafim" class="form-control" type="text">
+                                    <input type="date" name="datafim" class="form-control">
                                 </div>
                                 <label class="mini">Nome Completo</label>
                                 <div class="row">
