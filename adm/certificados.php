@@ -32,8 +32,9 @@ protegePaginaAdm();
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificados</title>
-    <!-- Bootstrap CSS File  -->
+    <!-- Bootstrap CSS File -->
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
+    
     <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <!-- MORRIS CHART STYLES-->
@@ -242,14 +243,18 @@ protegePaginaAdm();
     <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     
-    <!-- Jquery JS file -->
+    <!-- Jquery JS file 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
-    <!-- Bootstrap JS file -->
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS file
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
 
     <!-- Custom JS file -->
     <script type="text/javascript" src="js/script.js"></script>
+    
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
     
     <script type="application/javascript">
       $('ul.main li').click(function() {
