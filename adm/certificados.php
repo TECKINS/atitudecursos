@@ -4,15 +4,6 @@ session_start();
 include("../php/config.php");
 protegePaginaAdm();
 
-// cria a instrução SQL que vai selecionar os dados
-$query = sprintf("SELECT * FROM certificado ORDER BY data_cadastro DESC");
-// executa a query
-$dados = mysqli_query($conexao, $query) or die(mysql_error());
-// transforma os dados em um array
-$linha = mysqli_fetch_assoc($dados);
-// calcula quantos dados retornaram
-$total = mysqli_num_rows($dados);
-
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
