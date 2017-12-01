@@ -41,8 +41,8 @@ $total = mysqli_num_rows($dados);
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificados</title>
-    <!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap CSS File  -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
     <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <!-- MORRIS CHART STYLES-->
