@@ -126,11 +126,6 @@ $total = mysqli_num_rows($dados);
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1>Demo: PHP and MySQL CRUD Operations using Jquery</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
               <div class="pull-right">
                 <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Novo certificado</button>
               </div>
