@@ -90,7 +90,37 @@ $total = mysqli_num_rows($dados);
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper" >
       <div id="page-inner">
-      
+        
+        <div class="row">
+          <div class="col-md-12">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+              <li>
+                <i class="fa fa-home"></i>
+                <a href="../index.php">Home</a>
+                <i class="icon-angle-right"></i>
+              </li>
+
+              <li>
+                <a href="index.php">
+                  Painel Inicial                       </a>
+                <i class="icon-angle-right"></i>
+              </li>
+              <li>
+                <a href="certificados.php">
+                  Certificados                       </a>
+                <i class="icon-angle-right"></i>
+              </li>
+
+
+            </ul>
+            <!-- breadcrumb -->
+            <h2>CADASTRAMENTO DE CERTIFICADOS</h2>   
+            <h5><?php echo "Olá <strong>". $_SESSION['nome'] ."</strong>  "?></h5>
+          </div>
+        </div>              
+        <!-- /. ROW  -->
+        <hr />      
 
         <!-- Content Section -->
         <div class="container">
