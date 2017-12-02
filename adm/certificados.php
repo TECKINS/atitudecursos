@@ -117,24 +117,6 @@ protegePaginaAdm();
         <hr />      
 
         <!-- Content Section -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Novo certificado</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <h3>CERTIFICADOS</h3>
-
-              <div class="records_content"></div>
-            </div>
-          </div>
-        </div>
-        <!-- /Content Section -->
-        
         <div class="panel-group">
           <div class="panel panel-primary">
           <div class="panel-heading">
@@ -152,6 +134,7 @@ protegePaginaAdm();
           </div>
     </div>
    </div>
+        <!-- End Content Section -->
 
 
         <!-- Bootstrap Modals -->
