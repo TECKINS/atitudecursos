@@ -1,3 +1,9 @@
+<style>
+  button#add {
+    margin: 10px 0px 10px 42px;
+  }
+</style>
+
 <?php
 session_start();
 
