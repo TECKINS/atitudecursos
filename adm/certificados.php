@@ -210,7 +210,7 @@ protegePaginaAdm();
 
                 <div class="form-group">
                   <label for="update_keyword">Matrícula</label>
-                  <input type="text" id="update_keyword" placeholder="Matrícula" class="form-control"/>
+                  <input type="text" id="update_keyword" placeholder="Matrícula" disabled="" class="form-control"/>
                 </div>
 
                 <div class="form-group">
