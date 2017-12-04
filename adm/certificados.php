@@ -41,9 +41,17 @@ protegePaginaAdm();
     <!-- Bootstrap CSS File 
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>-->
     
+     <!-- Bootstrap JS file
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    
     <!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>   
-    <!-- FONTAWESOME STYLES-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>  
+    
+     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    
+    <!-- FONTAWESOME STYLES-->    
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <!-- MORRIS CHART STYLES-->
     <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
@@ -258,10 +266,7 @@ protegePaginaAdm();
     <!-- Jquery JS file 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
-    <!-- Bootstrap JS file
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
-    
-    <script src="../assets/js/jquery-1.10.2.js"></script>
+   
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="../assets/js/bootstrap.min.js"></script>
     
