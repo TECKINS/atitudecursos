@@ -25,7 +25,7 @@
               <a href="#" title="Conheça os locais onde pode usar seu Certificado">10 locais para usar o Certificado</a></li> 
             <li class="padding-bottom-5 padding-top-5"><a href="#" title="Veja como aplicar seu Certificado em Educação Continuada">Educação Continuada</a></li> 
             <li class="padding-bottom-5 padding-top-5"><a href="#" title="Conheça do 5 principais motivos para fazer um Curso Online">5 Motivos para fazer um Curso Online</a></li> 
-            <li class="padding-bottom-5 padding-top-5"><a href="#" title="Você pode apoiar nosso site fazendo uma doação.">Faça uma Doação</a></li> <li class="padding-bottom-5 padding-top-5"><a href="/nosso-certificado" title="Conheça do Modelo do seu Certificado.">Modelo do Certificado</a></li> </ul> </div><!--/col-md-3--> 
+            <li class="padding-bottom-5 padding-top-5"><a href="#" title="Você pode apoiar nosso site fazendo uma doação.">Faça uma Doação</a></li> <li class="padding-bottom-5 padding-top-5"><a href="#" title="Conheça do Modelo do seu Certificado.">Modelo do Certificado</a></li> </ul> </div><!--/col-md-3--> 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40 text-center"> 
             <span class="" style="font-size: 24px; color: #ffffff;">
               <i class="glyphicon glyphicon-phone-alt">&nbsp;</i>(91)&nbsp;3754-2307</span>
