@@ -177,17 +177,17 @@ protegePaginaAdm();
 
                         End Side Column 
 			
-			<?php 
+			 
 				//$valor = file_get_contents("https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/");
-				//echo $valor;
-			?>
-
-			-->
-			
+				//echo $valor;			
 			
 			<frameset >
 				<frame src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login" name="mainFrame">
 			</frameset>
+			
+			-->
+			
+			<iframe height="500" width="600" src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login"></iframe>
 			
 			
                     <div class="col-md-8 per">
