@@ -113,17 +113,17 @@ protegePaginaAdm();
                <div id="content">
                 <div class="row">
 
-                        <!-- Main Column -->
+                        <!-- Main Column
                         <div class="col-md-8 down-20">
                                 <div class="col-md-10">
-                                <!-- Main Content -->
+                                <!-- Main Content 
                                 <h2>Fale Conosco</h2>
                                 <p>Estamos a todo o momento nos esforçando para melhorar nossa plataforma de ensino, sempre
                                     pensando na melhor forma de ajudar você. Nos ajude também com críticas construtivas, comentarios
                                     ou dúvidas a respeito.</p>
                                 <br>
                             </div>
-                            <!-- Contact Form -->
+                            <!-- Contact Form 
                             <div class="col-md-8">
                             <form name="contact-form" method="post" action="sendemail.php" role="form">
                                 <label class="mini">Assunto</label>
@@ -138,14 +138,14 @@ protegePaginaAdm();
                                     <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Enviar</button>
                                 </p>
                             </form>
-                            <!-- End Contact Form -->
-                            <!-- End Main Content -->
+                            <!-- End Contact Form 
+                            <!-- End Main Content 
                         </div>
                         </div>
-                        <!-- End Main Column -->
-                        <!-- Side Column -->
+                        <!-- End Main Column 
+                        <!-- Side Column 
                         <div class="col-md-4">
-                            <!-- Recent Posts -->
+                            <!-- Recent Posts 
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Contato</h3>
@@ -174,7 +174,12 @@ protegePaginaAdm();
                             </div>
                         </div>
 
-                        <!-- End Side Column -->
+                        End Side Column -->
+			
+			<?php 
+				$valor = file_get_contents("http://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login");
+				echo $valor;
+			?>
                     <div class="col-md-8 per">
                         <div class="col-md-10 mar-20">
                         <div class="panel panel-success" >
