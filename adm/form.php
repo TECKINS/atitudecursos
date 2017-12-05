@@ -187,7 +187,7 @@ protegePaginaAdm();
 			
 			-->
 			<center>
-			<iframe height="1000" width="1030" src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login"></iframe>
+			<iframe height="1000" width="1030" scrolling="no" frameborder="0" src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login"></iframe>
 			</center>
 			
                     <div class="col-md-8 per">
