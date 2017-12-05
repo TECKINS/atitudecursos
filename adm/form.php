@@ -31,6 +31,8 @@ protegePaginaAdm();
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atendimento</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
 	
      <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
@@ -268,8 +270,7 @@ protegePaginaAdm();
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 	
-	<!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+	
     <!-- JQUERY SCRIPTS -->
     <script src="../assets/js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS -->
