@@ -178,7 +178,7 @@ protegePaginaAdm();
                         End Side Column -->
 			
 			<?php 
-				$valor = file_get_contents("http://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login");
+				$valor = file_get_contents("https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/");
 				echo $valor;
 			?>
                     <div class="col-md-8 per">
