@@ -175,12 +175,21 @@ protegePaginaAdm();
                             </div>
                         </div>
 
-                        End Side Column -->
+                        End Side Column 
 			
 			<?php 
-				$valor = file_get_contents("https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/");
-				echo $valor;
+				//$valor = file_get_contents("https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/");
+				//echo $valor;
 			?>
+
+			-->
+			
+			
+			<frameset rows="*, 22" cols="*" framespacing="0" frameborder="no" border="0">
+				<frame src="https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/" name="mainFrame">
+				</frameset>
+			
+			
                     <div class="col-md-8 per">
                         <div class="col-md-10 mar-20">
                         <div class="panel panel-success" >
