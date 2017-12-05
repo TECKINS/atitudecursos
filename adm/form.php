@@ -185,9 +185,9 @@ protegePaginaAdm();
 			-->
 			
 			
-			<frameset rows="*, 22" cols="*" framespacing="0" frameborder="no" border="0">
-				<frame src="https://www.atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/" name="mainFrame">
-				</frameset>
+			<frameset >
+				<frame src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login" name="mainFrame">
+			</frameset>
 			
 			
                     <div class="col-md-8 per">
