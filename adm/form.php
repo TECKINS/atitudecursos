@@ -186,9 +186,9 @@ protegePaginaAdm();
 			</frameset>
 			
 			-->
-			
-			<iframe height="500" width="600" src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login"></iframe>
-			
+			<center>
+			<iframe height="1000" width="1030" src="https://atitudecursos.org/livehelperchat-master/lhc_web/index.php/site_admin/user/login"></iframe>
+			</center>
 			
                     <div class="col-md-8 per">
                         <div class="col-md-10 mar-20">
