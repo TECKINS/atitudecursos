@@ -38,7 +38,7 @@ function recupera_senha($email){
 
 		echo "Este email não está cadastrado em nosso banco de dados.<br /><br />";
 
-		include " formulario_senha_perdida.html";
+		include "formulario_senha_perdida.html";
 
 		exit();
 
