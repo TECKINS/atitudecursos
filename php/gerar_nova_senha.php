@@ -12,7 +12,7 @@ switch($recupera){
 		break;
 
 	default:
-		header("Location:../formulario_senha_perdida.html");
+		header("Location: formulario_senha_perdida.html");
 		break;
 }
 
@@ -23,7 +23,7 @@ function recupera_senha($email){
         echo "Você esqueceu de preencher seu email.<br />
 			<strong>Use o mesmo email que utilizou em seu cadastro.</strong><br /><br />"; 
 
-		header("Location:../formulario_senha_perdida.html");
+		header("Location: formulario_senha_perdida.html");
 
 		exit();
 
@@ -38,7 +38,7 @@ function recupera_senha($email){
 
 		echo "Este email não está cadastrado em nosso banco de dados.<br /><br />";
 
-		include "../formulario_senha_perdida.html";
+		include " formulario_senha_perdida.html";
 
 		exit();
 
@@ -68,7 +68,7 @@ function recupera_senha($email){
 
 	$senha_randomica = makeRandomPassword();
 
-	$senha = sha1($senha_randomica);
+	$senha = md5($senha_randomica);
 
 	$sql = mysqli_query("UPDATE aluno SET senha='{$senha}' WHERE email ='{$email}'");
 
@@ -81,7 +81,7 @@ function recupera_senha($email){
 
 	<strong>Nova Senha</strong>: {$senha_randomica}<br /><br />
 
-	<a href='http://www.atitudecursos.org/formulario_login.html'>http://www.atitudecursos.org/formulario_login.html</a><br /><br />
+	<a href='https://www.atitudecursos.org/Login.html'>https://www.atitudecursos.org/Login.html</a><br /><br />
 
 	Obrigado!<br /><br />
 
@@ -94,7 +94,7 @@ function recupera_senha($email){
 
 	echo "Sua nova senha foi gerada com sucesso e enviada para o seu email!<br />Por favor verifique seu email!<br /><br />";
 
-	include "formulario_login.html";
+	include "../Login.html";
 
 }
 
