@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Cadastro | Atitude Cursos</title>
-    <link rel="stylesheet" href="css/nexus.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nexus.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +23,18 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script> 
+        function validarCampos(frm){
+            var check = document.getElementById("check");
+            if(check.checked == false) {
+            	alert("Você precisa aceitar os Termos e a Política para continuar.");
+            	return false;
+            } else {
+            	frm.submit();
+            };
+            
+        }
+    </script>
 </head><!--/head-->
 
 <body>
@@ -64,7 +76,7 @@
         <div class="row margin-vert-60">
             <!-- Register Box -->
             <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
-                <form class="signup-page" method="post" action="php/cadastra.php">
+                <form class="signup-page" method="post" action="php/cadastra.php" onsubmit="validarCampos(this); return false;">
                     <div class="signup-header">
                         <h2>Criar Nova Conta</h2>
                         <p>Já possui uma conta?
@@ -105,12 +117,12 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <label class="checkbox">
-                                <input type="checkbox">Eu aceito os
+                                <input type="checkbox" class="checar" id="check" name="checar">Eu aceito os
                                 <a href="termos-de-uso.php" style="color:#0000FF">Termos de Uso</a> e <a href="politica-de-privacidade.php" style="color:#0000FF">Política de Privacidade</a>
                             </label>
                         </div>
                         <div class="col-lg-4 text-right">
-                            <button class="btn btn-primary" type="submit">Concluir</button>
+                            <button class="btn btn-primary" id="cadastrar" type="submit">Cadastrar</button>
                         </div>
                     </div>
 			
@@ -141,5 +153,29 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/main.js"></script>
+
+<script> 
+/*$(document).ready(function(){
+    
+    $("#cadastrar").attr("disabled", true);
+    
+    var checado=false;
+    
+    $("#cadastrar").click(function () { //user clicks on button
+    
+		$("label.checkbox").find("input[type='checkbox']").each(function(){
+        if($(this).prop("checked")=="checked")
+           checado=true;
+        });
+        if(!checado){
+             alert("Você deve aceitar os termos de uso e politica de privacidade para continuar!");
+             return false;
+        }		
+	});
+    
+    
+});*/
+</script>
+
 </body>
 </html>
