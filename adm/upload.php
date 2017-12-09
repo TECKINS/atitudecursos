@@ -114,10 +114,11 @@ protegePaginaAdm();
                <div id="content">
                 <div class="row">
 			<center>
-			<iframe height="1200" width="1030" scrolling="no" frameborder="0" src="https://files42.hostinger.com.br/"></iframe>
+			<iframe height="1200" width="1030" scrolling="no" frameborder="1" src="https://files42.hostinger.com.br/">
+				</iframe>
 			</center>
 			
-                    </div>
+                </div>
                 </div>
             </div>
 	</div>
