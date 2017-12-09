@@ -63,12 +63,15 @@ protegePaginaAdm();
 						   <li  >
                         <a   href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
                     </li>	
-                      <li  >
+                      <li>
                         <a  href="dados.php"><i class="fa fa-table fa-3x"></i> Dados do Aluno </a>
                     </li>
-                    <li  >
+                    <li>
                         <a  href="form.php"><i class="fa fa-edit fa-3x"></i> Atendimento </a>
-                    </li>					
+                    </li>
+			<li>
+			    <a  href="https://files42.hostinger.com.br/" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
+			  </li>
                 </ul>
             
         </nav>  
