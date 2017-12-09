@@ -114,7 +114,7 @@ protegePaginaAdm();
                <div id="content">
                 <div class="row">
 			<center>
-			<iframe height="1200" width="1030" scrolling="no" frameborder="1" src="https://files42.hostinger.com.br/">
+			<iframe height="1200" width="1030" scrolling="no" frameborder="1" src="https://cpanel.hostinger.com.br/files/file-manager/aid/20801305">
 				</iframe>
 			</center>
 			
