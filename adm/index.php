@@ -71,7 +71,10 @@ protegePaginaAdm();
                     </li>
                     <li  >
                         <a  href="form.php"><i class="fa fa-pencil-square fa-3x"></i> Atendimento </a>
-                    </li>					
+                    </li>
+		    <li  >
+                        <a  href="https://cpanel.hostinger.com.br/files/file-manager/aid/20801305" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
+                    </li>	
                 </ul>
                
             </div>
