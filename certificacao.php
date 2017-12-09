@@ -3,6 +3,7 @@
 session_start();  // Inicia a session
 
 ?>
+
 <!DOCTYPE html>
 <html lang="br">
 <head>
@@ -26,6 +27,11 @@ session_start();  // Inicia a session
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposede.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<style>
+		td {
+			text-transform: uppercase;
+		}
+	</style>
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
