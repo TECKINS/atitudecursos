@@ -49,17 +49,9 @@ protegePaginaAdm();
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
-				<li class="text-center">
-                    <img src="../assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>
-				
-					
+                <ul class="nav" id="main-menu">	
                     <li>
                         <a  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
-                    </li>
-                     <li>
-                        <a  href="sala.php"><i class="fa fa-desktop fa-3x"></i> Sala de Aula</a>
                     </li>
                     <li>
                         <a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
@@ -77,7 +69,7 @@ protegePaginaAdm();
 			<a  href="https://files42.hostinger.com.br/" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
 		    </li>
 			<li>
-                        <a  href="https://webmail1.hostinger.com.br/roundcube/" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
+                        <a  href="https://webmail1.hostinger.com.br/" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
                     </li>
                 </ul>
                
