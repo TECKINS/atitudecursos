@@ -2,7 +2,7 @@
   <div class="footer" style="background: #202020; padding: 70px 0; padding-bottom: 30px;"> 
     <div class="container"> 
       <div class="row"> 
-        <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 text-justify"> 
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 md-margin-bottom-40 text-justify"> 
         </div>
         <!-- About --> <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 md-margin-bottom-40 text-justify"> 
         <div class="headline">
