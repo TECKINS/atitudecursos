@@ -9,7 +9,7 @@ body {
 div.footer {
     padding: 70px 0;
     padding-bottom: 30px;
-    background: #161616;
+    background: #202020;
 }
 
  #wrapper {
@@ -844,15 +844,18 @@ ul#main-menu {
     position: fixed;
     top: 60px;
     width: 260px;
-    background-color: 2D2D2D;
+    background-color: #202020;
 }
 
 nav.navbar.navbar-default.navbar-cls-top {
     position: fixed !important;
     width: 100% !important;
     z-index: 999 !important;
+    background-color: #202020 !important;
 }
 
 #page-inner {
     margin: 60px 20px 10px 0px !important;
 }
+
+
