@@ -846,3 +846,9 @@ ul#main-menu {
     width: 260px;
     background-color: 2D2D2D;
 }
+
+nav.navbar.navbar-default.navbar-cls-top {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 999 !important;
+}
