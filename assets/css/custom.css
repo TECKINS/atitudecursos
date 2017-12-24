@@ -839,3 +839,8 @@ ul.alert-dropdown {
         margin-left: 5px;
     }
 }
+
+ul#main-menu {
+    position: fixed;
+    top: 48px;
+}
