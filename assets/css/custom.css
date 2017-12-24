@@ -843,4 +843,5 @@ ul.alert-dropdown {
 ul#main-menu {
     position: fixed;
     top: 48px;
+    width: 260px;
 }
