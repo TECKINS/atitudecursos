@@ -54,13 +54,10 @@ protegePaginaAdm();
                     <li>
                         <a  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
                     </li>
-                     <li>
-                        <a class="active-menu"  href="sala.php"><i class="fa fa-desktop fa-3x"></i> Sala de Aula</a>
-                    </li>
                     <li>
                         <a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
                     </li>
-						   <li  >
+		    <li>
                         <a   href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
                     </li>	
                       <li>
