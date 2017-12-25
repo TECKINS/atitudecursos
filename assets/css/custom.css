@@ -668,11 +668,11 @@ border:0px solid black;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #B40101;
+background-color: #2ea7eb;
 }
-.navbar-default .navbar-toggle {
+/*.navbar-default .navbar-toggle {
 border-color: #fff;
-}
+}*/
 
 .navbar-default .navbar-toggle .icon-bar {
 background-color: #FFF;
