@@ -3975,9 +3975,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ccc;
   background-color: transparent;
 }
-.navbar-default .navbar-toggle {
+/*.navbar-default .navbar-toggle {
   border-color: #ddd;
-}
+}*/
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
