@@ -35,12 +35,10 @@
 						</ul> 
 					</div><!--/col-md-3--> 
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40 text-center"> 
-						<span style="font-size: 24px; color: #ffffff;">
-							<i class="glyphicon glyphicon-phone-alt">&nbsp;</i>(91)&nbsp;3754-2307</span>
-							<span style="font-size: 24px; color: #ffffff;">
-								<i class="fa fa-whatspp">&nbsp;</i>WhatsApp(91)&nbsp;98717-2307</span><br> 
-								<span style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 08:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span> 
-						</div> 
+						<span style="font-size: 24px; color: #ffffff;"><i class="glyphicon glyphicon-phone-alt">&nbsp;</i>(91)&nbsp;3754-2307</span>
+						<span style="font-size: 24px; color: #ffffff;"><i class="fa fa-whatsapp">&nbsp;</i>WhatsApp(91)&nbsp;98717-2307</span><br> 
+						<span style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 08:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span> 
+					</div> 
 				</div> <!-- End Latest --> <!-- Address --> 
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 md-margin-bottom-40 endereco" style="text-align:right;"> 
 					<div class="headline">
