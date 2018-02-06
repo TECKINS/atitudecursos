@@ -20,102 +20,104 @@ protegePagina();
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9095521793912977",
-    enable_page_level_ads: true
+	google_ad_client: "ca-pub-9095521793912977",
+	enable_page_level_ads: true
   });
 </script>
-      <meta charset="utf-8" />
-      <link rel="shortcut icon" href="../images/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposede.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="../images/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposede.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Painel Inicial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Painel Inicial</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
-     <!-- FONTAWESOME STYLES-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-     <!-- MORRIS CHART STYLES-->
-    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
-    <link href="../assets/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
+	<link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+	 <!-- FONTAWESOME STYLES-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	 <!-- MORRIS CHART STYLES-->
+	<link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+	<!-- CUSTOM STYLES-->
+	<link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
+	<link href="../assets/css/custom.css" rel="stylesheet" />
+	 <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    <script type="text/javascript">
-     function mudaFoto(foto) {
-       document.getElementById("icone").src = foto;
-     }
+	 function mudaFoto(foto) {
+	   document.getElementById("icone").src = foto;
+	 }
    </script>
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
+		<div id="sidebar-wrapper">
+		   <!-- /. NAV TOP  -->
+			<nav class="navbar-default navbar-side" role="navigation">
+				<div class="sidebar-collapse">
+					<ul class="nav" id="main-menu">
+						<li class="text-center">
+							<img id="icone" src="../assets/img/find_user.png" class="user-image img-responsive" width="128px" height="128px"/>
+						</li>
+						<li onmouseover="mudaFoto('../images/painelinicial.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a class="active-menu"  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
+						</li>
+						<li onmouseover="mudaFoto('../images/saladeaula.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a  href="sala.php"><i class="fa fa-desktop fa-3x"></i> Sala de Aula</a>
+						</li>
+						<li onmouseover="mudaFoto('../images/maiscursos.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
+						</li onmouseover="mudaFoto('../images/maiscursos.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+						<li onmouseover="mudaFoto('../images/certificacao.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a   href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
+						</li>
+						<li onmouseover="mudaFoto('../images/dadosdoaluno.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a  href="dados.php"><i class="fa fa-table fa-3x"></i> Dados do Aluno </a>
+						</li>
+						<li onmouseover="mudaFoto('../images/atendimento.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
+							<a  href="form.php"><i class="fa fa-pencil-square fa-3x"></i> Atendimento </a>
+						</li>
+					</ul>
 
-           <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
-				<li class="text-center">
-                    <img id="icone" src="../assets/img/find_user.png" class="user-image img-responsive" width="128px" height="128px"/>
-					</li>
+				</div>
 
+			</nav>
+		</div>
+		<div id="page-content-wrapper">
+			<!-- /. NAV SIDE  -->
+			<div id="page-wrapper" >
+				<div id="page-inner">
+					<?php 
+						$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
+						if(file_exists('paginas/'.$pagina.'.php')) {
+							include 'paginas/'.$pagina.'.php';
+						}else {
+							echo 'Erro 404! A página não existe.';
+						}
+					?>
 
-                    <li onmouseover="mudaFoto('../images/painelinicial.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a class="active-menu"  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
-                    </li>
-                     <li onmouseover="mudaFoto('../images/saladeaula.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a  href="sala.php"><i class="fa fa-desktop fa-3x"></i> Sala de Aula</a>
-                    </li>
-                    <li onmouseover="mudaFoto('../images/maiscursos.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
-                    </li onmouseover="mudaFoto('../images/maiscursos.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-						        <li onmouseover="mudaFoto('../images/certificacao.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a   href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
-                    </li>
-                      <li onmouseover="mudaFoto('../images/dadosdoaluno.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a  href="dados.php"><i class="fa fa-table fa-3x"></i> Dados do Aluno </a>
-                    </li>
-                    <li onmouseover="mudaFoto('../images/atendimento.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-                        <a  href="form.php"><i class="fa fa-pencil-square fa-3x"></i> Atendimento </a>
-                    </li>
-                </ul>
+				 <!-- /. PAGE INNER  -->
+				</div>
 
-            </div>
-
-        </nav>
-        <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" >
-			<div id="page-inner">
-				<?php 
-					$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
-					if(file_exists('paginas/'.$pagina.'.php')) {
-						include 'paginas/'.$pagina.'.php';
-					}else {
-						echo 'Erro 404! A página não existe.';
-					}
-				?>
+			 <!-- /. PAGE WRAPPER  -->
 			</div>
-
-             <!-- /. PAGE INNER  -->
-            </div>
-
-         <!-- /. PAGE WRAPPER  -->
-        </div>
+		</div>
 	<?php include("../php/rodape.php"); ?>
-     <!-- /. WRAPPER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="../assets/js/jquery-1.10.2.js"></script>
-      <!-- BOOTSTRAP SCRIPTS -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="../assets/js/jquery.metisMenu.js"></script>
-     <!-- MORRIS CHART SCRIPTS -->
-     <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="../assets/js/morris/morris.js"></script>
-      <!-- CUSTOM SCRIPTS -->
-    <script src="../assets/js/custom.js"></script>
+	 <!-- /. WRAPPER  -->
+	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+	<!-- JQUERY SCRIPTS -->
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/jquery-1.10.2.js"></script>
+	  <!-- BOOTSTRAP SCRIPTS -->
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<!-- METISMENU SCRIPTS -->
+	<script src="../assets/js/jquery.metisMenu.js"></script>
+	 <!-- MORRIS CHART SCRIPTS -->
+	 <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+	<script src="../assets/js/morris/morris.js"></script>
+	  <!-- CUSTOM SCRIPTS -->
+	<script src="../assets/js/custom.js"></script>
 <script type="text/javascript">
 var LHCChatOptions = {};
 LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'atitudecursos.org'};
@@ -126,6 +128,11 @@ var location  = (document.location) ? encodeURIComponent(window.location.href.su
 po.src = '//atitudecursos.org/livehelperchat-master/lhc_web/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(check_operator_messages)/true/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1?r='+referrer+'&l='+location;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
+
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
 </script>
 
 

@@ -48,15 +48,17 @@ $total = mysqli_num_rows($dados);
     <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
      <!-- MORRIS CHART STYLES-->
     <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
+    <!-- CUSTOM STYLES-->
+    <link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
     <link href="../assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
+        <div id="sidebar-wrapper">
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+            <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
@@ -84,7 +86,8 @@ $total = mysqli_num_rows($dados);
                     </li>					
                 </ul>
             
-        </nav>  
+        </nav>
+        </div>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
@@ -236,6 +239,11 @@ $total = mysqli_num_rows($dados);
     <script src="../assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="../assets/js/custom.js"></script>
- 
+    <script type="text/javascript">
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>

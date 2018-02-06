@@ -40,6 +40,7 @@ protegePagina();
      <!-- MORRIS CHART STYLES-->
     <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
+    <link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
     <link href="../assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -47,6 +48,7 @@ protegePagina();
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
+           <div id="sidebar-wrapper">
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
@@ -79,6 +81,7 @@ protegePagina();
             </div>
             
         </nav>  
+        </div>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
@@ -262,6 +265,10 @@ protegePagina();
        $('ul.main li').click(function() {
            $(this).children('ul').toggle();
        });
+       $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
    </script>
    
 </body>
