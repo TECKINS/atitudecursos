@@ -9,7 +9,7 @@ $email = $_SESSION['email'];
 // cria a instrução SQL que vai selecionar os dados
 $query = sprintf("SELECT * FROM aluno WHERE email = '$email'");
 // executa a query
-$dados = mysqli_query($conexao, $query) or die(mysql_error());
+$dados = mysqli_query($conexao, $query) or die(mysqli_error());
 // transforma os dados em um array
 $linha = mysqli_fetch_assoc($dados);
 // calcula quantos dados retornaram
