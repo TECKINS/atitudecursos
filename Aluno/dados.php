@@ -5,7 +5,7 @@ include("../php/config.php");
 protegePagina();
 
 $email = $_SESSION['email'];
-
+ 
 // cria a instrução SQL que vai selecionar os dados
 $query = sprintf("SELECT * FROM aluno WHERE email = '$email'");
 // executa a query
