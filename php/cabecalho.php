@@ -77,7 +77,7 @@
 						<a href="perfil.php"><i class="fa fa-fw fa-user"></i> Perfil</a>
 					</li>
 					<li>
-						<a href="email.php"><i class="fa fa-fw fa-envelope"></i>Mensagens</a>
+						<a href="email.php"><i class="fa fa-fw fa-envelope"></i> Mensagens</a>
 					</li>
 					<li>
 						<a href="dados.php"><i class="fa fa-fw fa-gear"></i> Configuração</a>
