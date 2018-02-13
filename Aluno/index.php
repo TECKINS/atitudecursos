@@ -44,11 +44,6 @@ protegePagina();
 	<link href="../assets/css/custom.css" rel="stylesheet" />
 	 <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   <script type="text/javascript">
-	 function mudaFoto(foto) {
-	   document.getElementById("icone").src = foto;
-	 }
-   </script>
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
