@@ -89,7 +89,7 @@ protegePaginaAdm();
             <a  href="https://files42.hostinger.com.br/" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
           </li>
           <li>
-                        <a  href="https://webmail1.hostinger.com.br/" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
+                        <a  href="https://cpanel.hostinger.com.br/files/file-manager/aid/28243322" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
                     </li>
         </ul>
 
