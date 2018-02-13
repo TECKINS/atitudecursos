@@ -7,7 +7,7 @@
 							<img id="icone" src="../assets/img/find_user.png" class="user-image img-responsive" width="128px" height="128px"/>
 						</li>
 						<li onmouseover="mudaFoto('../images/painelinicial.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
-							<a class="active-menu"  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
+							<a href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
 						</li>
 						<li onmouseover="mudaFoto('../images/saladeaula.png')" onmouseout="mudaFoto('../assets/img/find_user.png')">
 							<a  href="sala.php"><i class="fa fa-desktop fa-3x"></i> Sala de Aula</a>
