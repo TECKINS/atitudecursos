@@ -1,3 +1,8 @@
+<script type="text/javascript">
+	 function mudaFoto(foto) {
+	   document.getElementById("icone").src = foto;
+	 }
+</script>
 <div id="sidebar-wrapper">
 		   <!-- /. NAV TOP  -->
 			<nav class="navbar-default navbar-side" role="navigation">
