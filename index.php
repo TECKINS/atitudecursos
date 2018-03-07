@@ -6,24 +6,6 @@ include("php/config.php");
 <!DOCTYPE html>
 <html lang="br">
 <head>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88350404-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9095521793912977",
-    enable_page_level_ads: true
-  });
-</script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Atitude Cursos EAD é uma plataforma de ensino que propõe novas formas de aprendizado com metodologias modernas e com uso intenso de tecnologia aplicada ao e-learning.">
@@ -31,11 +13,7 @@ include("php/config.php");
     <meta name="author" content="Atitude RH Consultoria e Cursos">
     <!--<meta http-equiv="refresh" content="30">-->
     <title>Home | Atitude Cursos</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -300,11 +278,36 @@ include("php/config.php");
         </div>
     </div>
 </footer><!--/#footer-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+                                    
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/main.js"></script>
+                                    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88350404-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9095521793912977",
+    enable_page_level_ads: true
+  });
+</script>
+                                    
 <script>
     function Enviar() {
         document.getElementById("div").style.display="block";
