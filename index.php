@@ -16,7 +16,6 @@ include("php/config.php");
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/custom.css">
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
