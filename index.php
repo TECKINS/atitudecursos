@@ -13,6 +13,10 @@ include("php/config.php");
     <meta name="author" content="Atitude RH Consultoria e Cursos">
     <!--<meta http-equiv="refresh" content="30">-->
     <title>Home | Atitude Cursos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -278,10 +282,6 @@ include("php/config.php");
         </div>
     </div>
 </footer><!--/#footer-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/custom.css">
                                     
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
