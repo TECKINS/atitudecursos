@@ -37,6 +37,8 @@ protegePaginaAdm();
 	<link href="../assets/css/font-awesome.css" rel="stylesheet" />
 	<!-- MORRIS CHART STYLES-->
 	<link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+	<!-- MENU BAR STYLES-->
+	<link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
 	<!-- CUSTOM STYLES-->
 	<link href="../assets/css/custom.css" rel="stylesheet" />
 	<!-- GOOGLE FONTS-->
