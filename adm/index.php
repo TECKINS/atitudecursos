@@ -280,5 +280,12 @@ protegePaginaAdm();
 	<script src="../assets/js/morris/morris.js"></script>
 	<!-- CUSTOM SCRIPTS -->
 	<script src="../assets/js/custom.js"></script>
+
+	<script type="text/javascript">
+		$("#menu-toggle").click(function(e) {
+		    e.preventDefault();
+		    $("#wrapper").toggleClass("toggled");
+		});
+	</script>
 </body>
 </html>
