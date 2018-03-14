@@ -106,4 +106,3 @@
 		</div>
 	</div>
 </nav>
-<div id="wrapper" class="toggled">
