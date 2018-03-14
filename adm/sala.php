@@ -29,16 +29,20 @@ protegePaginaAdm();
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sala de Aula</title>
-	<!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
-     <!-- FONTAWESOME STYLES-->
-    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <!-- CUSTOM STYLES-->
-    <link href="../assets/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Painel Inicial</title>
+		<!-- BOOTSTRAP STYLES-->
+		<link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+		<!-- FONTAWESOME STYLES-->
+		<link href="../assets/css/font-awesome.css" rel="stylesheet" />
+		<!-- MORRIS CHART STYLES-->
+		<link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+		<!-- MENU BAR STYLES-->
+		<link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
+		<!-- CUSTOM STYLES-->
+		<link href="../assets/css/custom.css" rel="stylesheet" />
+		<!-- GOOGLE FONTS-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
