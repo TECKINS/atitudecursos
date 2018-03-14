@@ -55,8 +55,6 @@ protegePaginaAdm();
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <!-- MORRIS CHART STYLES-->
     <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <!-- MENU BAR STYLES-->
-    <link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
     <!-- CUSTOM STYLES-->
     <link href="../assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
@@ -232,24 +230,23 @@ protegePaginaAdm();
     </div>
     <?php include("../php/rodape.php"); ?>
     <!-- /. WRAPPER  -->
-  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-  <!-- JQUERY SCRIPTS -->
-  <script src="../assets/js/jquery-1.10.2.js"></script>
-  <!-- BOOTSTRAP SCRIPTS -->
-  <script src="../assets/js/bootstrap.min.js"></script>
-  <!-- METISMENU SCRIPTS
-  <script src="../assets/js/jquery.metisMenu.js"></script>-->
-  <!-- MORRIS CHART SCRIPTS -->
-  <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
-  <script src="../assets/js/morris/morris.js"></script>
-  <!-- CUSTOM SCRIPTS -->
-  <script src="../assets/js/custom.js"></script>
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 
-  <script type="text/javascript">
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-  </script>
- </body>
- </html>
+    <!-- Jquery JS file
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+     <!-- Custom JS file -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="application/javascript">
+      $('ul.main li').click(function() {
+        $(this).children('ul').toggle();
+      });
+    </script>
+
+  </body>
+</html>
