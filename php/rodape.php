@@ -3,13 +3,13 @@
 		<div class="container">
 			<div class="row"> 
 				<!-- About -->
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 md-margin-bottom-40 text-justify">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 text-justify">
 					<div class="headline">
 						<h2 style="color: #ffffff; font-weight: 600;">Atitude Cursos</h2></div>
 						<p style="color: #ffffff;">Nós da Atitude Cursos somos uma empresa que temos como missão levar educação profissionalizante de qualidade aos quatro cantos do brasil e do mundo por um preço justo.</p>
 						<p style="color: #ffffff;">Somos associados a Associação Brasileira de Educação a Distância (ABED) e temos nossa atuação Autorizada de acordo com a Lei nº 9.394/96 e Decreto Presidencial nº 5.154/04.</p>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 md-margin-bottom-40">
 						<div class="headline text-center">
 							<h2 style="color: #ffffff; font-weight: 600;">Institucional</h2></div>
@@ -39,7 +39,7 @@
 						<span style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 08:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span>
 					</div>
 				</div> <!-- End Latest --> <!-- Address -->
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 md-margin-bottom-40 endereco" style="text-align:right;">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 endereco" style="text-align:right;">
 					<div class="headline">
 						<h2 style="color: #ffffff; font-weight: 600;">Nossos Contatos</h2></div>
 						<address class="md-margin-bottom-40" style="color: #ffffff;">
