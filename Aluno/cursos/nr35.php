@@ -13,7 +13,7 @@ protegePagina();
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/ico/apple-touch-icon-114-precomposede.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../../images/ico/apple-touch-icon-57-precomposed.png">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NR 35</title>
 	<!-- BOOTSTRAP STYLES-->
@@ -30,7 +30,7 @@ protegePagina();
 <body>
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
-        <a class="navbar-brand" href="index.php"><img src="../images/logo.png"/></a>
+        <a class="navbar-brand" href="index.php"><img src="../../images/logo.png"/></a>
         <div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
 
             <!-- Top Menu Items -->
@@ -185,7 +185,7 @@ protegePagina();
                      <h2 style="text-align:justify"><strong>CURSO DE SEGURANÇA E SAÚDE NO TRABALHO EM ALTURA (NR-33)</strong></h2>
                         <h5><?php echo "Bem vindo <strong>". $_SESSION['nome'] ."</strong>, ao curso de NR-33. "?></h5>
                     </div>
-                </div>              
+                </div>
                  <!-- /. ROW  -->
                  <hr />
                  <div class="row">
@@ -274,13 +274,13 @@ protegePagina();
                              </div>
                      </div>
                      <hr />
-                    
+
                       <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                          	<strong>NR 33</strong>
-                        </div>        
-                                
+                        </div>
+
                         <div class="panel-body">
 						<p style="text-align:justify">Esta NR tem por objetivo estabelecer os requisitos mínimos para identificação de espaços confinados e o reconhecimento, avaliação, monitoramento e controle dos riscos existentes, de forma a garantir permanentemente a segurança e saúde dos trabalhadores e que interagem direta ou indiretamente nesses espaços.
 							</br>Espaço confinado é qualquer área ou ambiente não projetado para ocupação humana contínua, que possua meios limitados de entrada e saída, cuja ventilação existente é insuficiente para remover contaminantes ou onde possa existir a deficiência ou enriquecimento de oxigênio.</p>
@@ -298,7 +298,7 @@ protegePagina();
                     <a href="#" class="btn btn-info btn-sm">info</a>
                     <a href="#" class="btn btn-warning btn-sm">warning</a>-->
 
-                   <!-- 
+                   <!--
                     <h4>Large Button</h4>
 
                    <a href="#" class="btn btn-default btn-lg">default</a>
@@ -307,19 +307,19 @@ protegePagina();
                     <a href="#" class="btn btn-success btn-lg">success</a>
                     <a href="#" class="btn btn-info btn-lg">info</a>-->
 
-                   
+
                 </div>
             </div>
                           </div>
-                     
-                <!-- /. ROW  
+
+                <!-- /. ROW
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Circle Icon Buttons 
+                            Circle Icon Buttons
                         </div>
-                       
+
                         <div class="panel-body">
                              <br /> <br />
                             <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
@@ -336,22 +336,22 @@ protegePagina();
                             </button>
                            <br />
                              <p>
-                        For more customization for this template or its components please visit official bootstrap website i.e getbootstrap.com or <a href="http://getbootstrap.com/components/" target="_blank">click here</a> . We hope you will enjoy our template. This template is easy to use, light weight and made with love by binarycart.com 
+                        For more customization for this template or its components please visit official bootstrap website i.e getbootstrap.com or <a href="http://getbootstrap.com/components/" target="_blank">click here</a> . We hope you will enjoy our template. This template is easy to use, light weight and made with love by binarycart.com
                         </p>
                         </div>
-                        
+
                     </div>
                     </div>
                     <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Icons Examples : 
+                            Icons Examples :
                         </div>
-                       
+
                         <div class="panel-body">
                             <br />
                             <i class="fa fa-desktop "></i>
-                            
+
                              <i class="fa fa-desktop fa-2x"></i>
                               <i class="fa fa-desktop fa-3x"></i>
                               <i class="fa fa-desktop fa-4x"></i>
@@ -359,7 +359,7 @@ protegePagina();
                               <br />
                              <br />
                             <i class="fa fa-flask "></i>
-                            
+
                              <i class="fa fa-flask fa-2x"></i>
                               <i class="fa fa-flask fa-3x"></i>
                               <i class="fa fa-flask fa-4x"></i>
@@ -369,18 +369,18 @@ protegePagina();
                         For more customization Of icons please visit website : fortawesome.github.io/Font-Awesome/icons/ or  <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank" >Click here</a> . You will get all font-awesome icons and there classes there.
                         </p>
                         </div>
-                        
+
                     </div>
                     </div>
                 </div>
-                 <!-- /. ROW  
+                 <!-- /. ROW
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Simple Progress Bars 
+                            Simple Progress Bars
                         </div>
-                       
+
                         <div class="panel-body">
                        <div class="progress">
   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -408,9 +408,9 @@ protegePagina();
                     <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Stripped Progress Bars 
+                            Stripped Progress Bars
                         </div>
-                       
+
                         <div class="panel-body">
                        <div class="progress progress-striped">
   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -436,14 +436,14 @@ protegePagina();
                             </div>
                     </div>
                 </div>
-                 <!-- /. ROW  
+                 <!-- /. ROW
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Animated Progress Bars 
+                            Animated Progress Bars
                         </div>
-                       
+
                         <div class="panel-body">
                        <div class="progress progress-striped active">
   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -456,9 +456,9 @@ protegePagina();
                       <div class="col-md-6">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Stacked Progress Bars 
+                            Stacked Progress Bars
                         </div>
-                       
+
                         <div class="panel-body">
                        <div class="progress">
   <div class="progress-bar progress-bar-success" style="width: 35%">
@@ -475,10 +475,10 @@ protegePagina();
                             </div>
                     </div>
                 </div>
-                <!-- /. ROW  
+                <!-- /. ROW
                 <div class="row">
                     <div class="col-md-6">
-                       
+
                      <!--  Modals
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -508,7 +508,7 @@ protegePagina();
                         </div>
                     </div>
                      <!-- End Modals
-                
+
                     </div>
                      <div class="col-md-6">
                           <div class="panel panel-default">
@@ -528,7 +528,7 @@ protegePagina();
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
                             </div>
                             Info: You can use other classes like <i>alert-success</i> , <i>alert-warning</i> & <i>alert-danger</i> instead of <i>alert-info</i>
-                           
+
                              </div>
                               </div>
                      </div>
@@ -550,9 +550,9 @@ protegePagina();
                     <p><a href="http://www.anamt.org.br/site/upload_arquivos/clipping_2015_2732015153467055475.pdf" target="_blank" style="color: #000""><i class="fa fa-file-pdf-o fa-2x"></i> Aportila Fundamentos de NR-33</a></p>
                 </div>
             </div>
-			
-                
-            
+
+
+
         </div>
     </div>
 
