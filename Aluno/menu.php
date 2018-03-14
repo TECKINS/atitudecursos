@@ -3,9 +3,8 @@
 		document.getElementById("icone").src = foto;
 	}
 </script>
-<div id="sidebar-wrapper">
 	<!-- /. NAV TOP  -->
-	<nav class="navbar-default navbar-side" role="navigation">
+	<nav class="sidebar-menu">
 			<ul class="menu">
 				<li class="text-center">
 					<img id="icone" src="../assets/img/find_user.png" class="user-image img-responsive" width="128px" height="128px"/>
@@ -30,4 +29,3 @@
 				</li>
 			</ul>
 	</nav>
-</div>
