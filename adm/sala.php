@@ -28,7 +28,7 @@ protegePaginaAdm();
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposede.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sala de Aula</title>
 	<!-- BOOTSTRAP STYLES-->
@@ -42,34 +42,7 @@ protegePaginaAdm();
 </head>
 <body>
 	<?php include("../php/cabecalho.php"); ?>
-           <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">		
-                    <li>
-                        <a  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
-                    </li>
-                    <li>
-                        <a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
-                    </li>
-		    <li>
-                        <a   href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
-                    </li>	
-                      <li>
-                        <a  href="dados.php"><i class="fa fa-table fa-3x"></i> Dados do Aluno </a>
-                    </li>
-                    <li>
-                        <a  href="form.php"><i class="fa fa-edit fa-3x"></i> Atendimento </a>
-                    </li>
-			<li>
-			    <a  href="https://files42.hostinger.com.br/" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
-			  </li>
-			<li>
-                        <a  href="https://webmail1.hostinger.com.br/roundcube/" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
-                    </li>
-                </ul>
-            
-        </nav>  
+	<?php include("menu.php"); ?>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
@@ -93,14 +66,14 @@ protegePaginaAdm();
                             Sala de aula                       </a>
                                                                         <i class="icon-angle-right"></i>
                             </li>
-                                
-                        
+
+
     </ul>
 	<!-- breadcrumb -->
-                     <h2>Sala de Aula</h2>   
+                     <h2>Sala de Aula</h2>
                         <h5><?php echo "Bem vindo <strong>". $_SESSION['nome'] ."</strong>, a sua área de estudos "?></h5>
                     </div>
-                </div>              
+                </div>
                  <!-- /. ROW  -->
                  <hr />
                  <div class="row">
@@ -195,7 +168,7 @@ protegePaginaAdm();
 
                           </div>
                           <hr />
-                     
+
                 <!-- /. ROW  -->
 
 
@@ -242,16 +215,25 @@ $id = $valor["id"];
         </div>
 			</div>
 			<?php include("../php/rodape.php"); ?>
-     <!-- /. WRAPPER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="../assets/js/jquery-1.10.2.js"></script>
-      <!-- BOOTSTRAP SCRIPTS -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="../assets/js/jquery.metisMenu.js"></script>
-      <!-- CUSTOM SCRIPTS -->
-    <script src="../assets/js/custom.js"></script>
- 
-</body>
-</html>
+			<!-- /. WRAPPER  -->
+ 	 	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+ 	 	<!-- JQUERY SCRIPTS -->
+ 	 	<script src="../assets/js/jquery-1.10.2.js"></script>
+ 	 	<!-- BOOTSTRAP SCRIPTS -->
+ 	 	<script src="../assets/js/bootstrap.min.js"></script>
+ 	 	<!-- METISMENU SCRIPTS -->
+ 	 	<script src="../assets/js/jquery.metisMenu.js"></script>
+ 	 	<!-- MORRIS CHART SCRIPTS -->
+ 	 	<script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+ 	 	<script src="../assets/js/morris/morris.js"></script>
+ 	 	<!-- CUSTOM SCRIPTS -->
+ 	 	<script src="../assets/js/custom.js"></script>
+
+ 	 	<script type="text/javascript">
+ 	 		$("#menu-toggle").click(function(e) {
+ 	 		    e.preventDefault();
+ 	 		    $("#wrapper").toggleClass("toggled");
+ 	 		});
+ 	 	</script>
+ 	 </body>
+ 	 </html>
