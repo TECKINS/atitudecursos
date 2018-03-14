@@ -235,6 +235,7 @@ protegePaginaAdm();
   <!-- METISMENU SCRIPTS -->
   <script src="../assets/js/jquery.metisMenu.js"></script>
 
+  <script src="../assets/js/custom.js"></script>
 
   <script type="text/javascript">
     $("#menu-toggle").click(function(e) {
