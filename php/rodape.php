@@ -1,5 +1,4 @@
 <div class="footer" id="footer">
-	<div class="footer" style="background: #202020; padding: 70px 0; padding-bottom: 30px;">
 		<div class="container">
 			<div class="row"> 
 				<!-- About -->
@@ -62,7 +61,6 @@
 						<a class="btn btn-primary btn-lg" href="form.php">Fale Conosco</a>
 				</div><!--/col-md-3--> <!-- End Address -->
 			</div>
-		</div>
 	</div><!--/footer-->
 			<div class="copyright" style="text-align: center; color: #ffffff; background: #202020;">
 				<div class="container">
