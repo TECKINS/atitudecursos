@@ -866,20 +866,12 @@ nav.navbar.navbar-default.navbar-cls-top {
 }
 
 .menu a {
-  background: url(icons.png) no-repeat left top;
   color: #ddd;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   padding-left: 3em;
   width: 100%;
-}
-
-.menu a:hover {
-  margin-left: 1em;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
 }
 
 .menu li {
@@ -904,9 +896,9 @@ nav.navbar.navbar-default.navbar-cls-top {
 .menu li:last-child a { background-position: 0 -210px; }
 
 .sidebar-menu {
-  background: rgba(41,128,185,1);
+  background: #202020;
   padding-right: .25em;
-  position: absolute;
+  position: fixed;
   left: -18em;
   top: 0;
   padding-top: 5em;
