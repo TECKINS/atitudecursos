@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 14, 2018 at 11:32 AM
+-- Generation Time: Mar 14, 2018 at 11:34 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.0.28
 
@@ -25,45 +25,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mensagem`
+-- Table structure for table `professores`
 --
 
-CREATE TABLE `mensagem` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `remetente` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `destinatario` varchar(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `date` datetime NOT NULL
+CREATE TABLE `professores` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `sobrenome` varchar(45) NOT NULL,
+  `especialista` varchar(45) NOT NULL,
+  `online` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mensagem`
+-- Dumping data for table `professores`
 --
 
-INSERT INTO `mensagem` (`id`, `remetente`, `destinatario`, `message`, `date`) VALUES
-(1, 'Cristiano', 'Cristiano', 'Seja Bem vindo a Atitude Cursos', '2017-05-07 10:21:21'),
-(3, 'Cristiano', 'Danilo', 'Olá, bem vindo a Atitude', '2018-02-05 16:23:00');
+INSERT INTO `professores` (`id`, `nome`, `sobrenome`, `especialista`, `online`) VALUES
+(1, 'Castelo', 'Branco', 'Engenharia Mecanica', 'Sim'),
+(2, 'Cristiano', 'Santos', 'Engenharia de Software', 'Não'),
+(3, 'Mikael ', 'Valinoto', 'Engenharia da Computacao', 'Não'),
+(4, 'Marllon', 'Pontes', 'Engenharia de Seguranca e Testes', 'Sim');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `mensagem`
+-- Indexes for table `professores`
 --
-ALTER TABLE `mensagem`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id` (`id`);
+ALTER TABLE `professores`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `mensagem`
+-- AUTO_INCREMENT for table `professores`
 --
-ALTER TABLE `mensagem`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `professores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
