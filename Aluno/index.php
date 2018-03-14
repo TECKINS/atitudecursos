@@ -91,10 +91,6 @@ var location  = (document.location) ? encodeURIComponent(window.location.href.su
 po.src = '//atitudecursos.org/livehelperchat-master/lhc_web/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(check_operator_messages)/true/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1?r='+referrer+'&l='+location;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
-
-$('#menu-toggle').click(function(event) {
-  $('.sidebar-menu').toggleClass('active');
-});
 </script>
 
 
