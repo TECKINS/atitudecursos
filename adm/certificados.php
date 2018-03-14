@@ -227,21 +227,23 @@ protegePaginaAdm();
     </div>
     <?php include("../php/rodape.php"); ?>
     <!-- /. WRAPPER  -->
-  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-  <!-- JQUERY SCRIPTS
-  <script src="../assets/js/jquery-1.10.2.js"></script>-->
-  <!-- BOOTSTRAP SCRIPTS -->
-  <script src="../assets/js/bootstrap.min.js"></script>
-  <!-- METISMENU SCRIPTS -->
-  <script src="../assets/js/jquery.metisMenu.js"></script>
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 
-  <script src="../assets/js/custom.js"></script>
+    <!-- Jquery JS file
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
-  <script type="text/javascript">
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-  </script>
- </body>
- </html>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+     <!-- Custom JS file -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="application/javascript">
+      $('ul.main li').click(function() {
+        $(this).children('ul').toggle();
+      });
+    </script>
+
+  </body>
+</html>
