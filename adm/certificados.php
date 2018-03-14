@@ -38,68 +38,41 @@ protegePaginaAdm();
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificados</title>
-    <!-- Bootstrap CSS File 
+    <!-- Bootstrap CSS File
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>-->
-    
+
      <!-- Bootstrap JS file
     <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
     <script src="../assets/js/jquery-1.10.2.js"></script>
-    
+
     <!-- BOOTSTRAP STYLES-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>  
-    
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+
      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
-    
-    <!-- FONTAWESOME STYLES-->    
+
+    <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <!-- MORRIS CHART STYLES-->
     <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- MENU BAR STYLES-->
+    <link href="../assets/css/simple-sidebar.css" rel="stylesheet"/>
     <!-- CUSTOM STYLES-->
     <link href="../assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
 
   </head>
   <body>
     <?php include("../php/cabecalho.php"); ?>
-    <!-- /. NAV TOP  -->
-    <nav class="navbar-default navbar-side" role="navigation">
-      <div class="sidebar-collapse">
-        <ul class="nav" id="main-menu">
-          <li>
-            <a  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Painel Inicial</a>
-          </li>
-          <li>
-            <a  href="cursos.php"><i class="fa fa-book fa-3x"></i> Mais Cursos</a>
-          </li>
-          <li  >
-            <a class="active-menu" href="certificados.php"><i class="fa fa-qrcode fa-3x"></i> Certificados</a>
-          </li>	
-          <li  >
-            <a  href="dados.php"><i class="fa fa-table fa-3x"></i> Dados do Aluno </a>
-          </li>
-          <li  >
-            <a href="form.php"><i class="fa fa-pencil-square fa-3x"></i> Atendimento </a>
-          </li>		
-          <li>
-            <a  href="https://files42.hostinger.com.br/" target="_blank"><i class="fa fa-file fa-3x"></i> Gerenciador de Arquivos </a>
-          </li>
-          <li>
-                        <a  href="https://cpanel.hostinger.com.br/files/file-manager/aid/28243322" target="_blank"><i class="fa fa-envelope fa-3x"></i> Email </a>
-                    </li>
-        </ul>
-
-      </div>
-
-    </nav>  
+    <?php include("menu.php"); ?>
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper" >
       <div id="page-inner">
-        
+
         <div class="row">
           <div class="col-md-12">
             <!-- breadcrumb -->
@@ -124,12 +97,12 @@ protegePaginaAdm();
 
             </ul>
             <!-- breadcrumb -->
-            <h2>CADASTRAMENTO DE CERTIFICADOS</h2>   
+            <h2>CADASTRAMENTO DE CERTIFICADOS</h2>
             <h5><?php echo "Olá <strong>". $_SESSION['nome'] ."</strong>  "?></h5>
           </div>
-        </div>              
+        </div>
         <!-- /. ROW  -->
-        <hr />      
+        <hr />
 
         <!-- Content Section -->
         <div class="panel-group">
@@ -141,7 +114,7 @@ protegePaginaAdm();
               </div>
               <div class="col-md-2">
                 <button class="btn btn-success" id="add" data-toggle="modal" data-target="#add_new_record_modal">Novo certificado</button>
-              </div>              
+              </div>
             </div>
           </div>
           <div class="panel-body">
@@ -254,28 +227,29 @@ protegePaginaAdm();
           </div>
         </div>
         <!-- // Modal -->
-        
+
       </div>
     </div>
     <?php include("../php/rodape.php"); ?>
     <!-- /. WRAPPER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    
-    <!-- Jquery JS file 
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+  <!-- JQUERY SCRIPTS -->
+  <script src="../assets/js/jquery-1.10.2.js"></script>
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- METISMENU SCRIPTS -->
+  <script src="../assets/js/jquery.metisMenu.js"></script>
+  <!-- MORRIS CHART SCRIPTS -->
+  <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+  <script src="../assets/js/morris/morris.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <script src="../assets/js/custom.js"></script>
 
-   
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    
-     <!-- Custom JS file -->
-    <script type="text/javascript" src="js/script.js"></script>
-    
-    <script type="application/javascript">
-      $('ul.main li').click(function() {
-        $(this).children('ul').toggle();
-      });
-    </script>
-
-  </body>
-</html>
+  <script type="text/javascript">
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+ </body>
+ </html>
