@@ -287,7 +287,7 @@ include("php/config.php");
         <div class="row">
             <div class="col-sm-8">
                 &copy; <?php echo date("Y");?> | Todos os direitos reservados a Atitude Cursos.
-                <a href="politica-de-privacidade.php" style="color:#0000FF"> Política de Privacidade |</a><a href="termos-de-uso.php" style="color:#0000FF">Termos de Uso</a>
+                <a href="politica-de-privacidade.php" style="color:#0000FF"> Política de Privacidade | </a><a href="termos-de-uso.php" style="color:#0000FF"> Termos de Uso</a>
             </div>
             <div class="col-sm-4">
                 <img class="pull-right" src="images/designer.png" alt="Designer" title="Designer">
