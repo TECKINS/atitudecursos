@@ -919,14 +919,3 @@ nav.navbar.navbar-default.navbar-cls-top {
 }
 
 .sidebar-menu.active { left: 0; }
-
-#mobile-nav {
-  background: url(menu-icon.png);
-  cursor: pointer;
-  left: 2em;
-  height: 30px;
-  position: absolute;
-  top: 2em;
-  width: 30px;
-  z-index: 30;
-}
