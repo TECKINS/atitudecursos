@@ -49,26 +49,25 @@ protegePagina();
 	<?php include("../php/cabecalho.php"); ?>
 	<?php include("menu.php"); ?>
 	<div id="page-content-wrapper">
-			<!-- /. NAV SIDE  -->
-			<div id="page-wrapper" >
-				<div id="page-inner">
-					<?php 
-						$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
-						if(file_exists('paginas/'.$pagina.'.php')) {
-							include 'paginas/'.$pagina.'.php';
-						}else {
-							echo 'Erro 404! A página não existe.';
-						}
-					?>
+		<!-- /. NAV SIDE  -->
+		<div id="page-wrapper" >
+			<div id="page-inner">
+				<?php 
+					$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
+					if(file_exists('paginas/'.$pagina.'.php')) {
+						include 'paginas/'.$pagina.'.php';
+					}else {
+						echo 'Erro 404! A página não existe.';
+					}
+				?>
 
 				 <!-- /. PAGE INNER  -->
-				</div>
-
-			 <!-- /. PAGE WRAPPER  -->
 			</div>
+			 <!-- /. PAGE WRAPPER  -->
 		</div>
-	<?php include("../php/rodape.php"); ?>
-	 <!-- /. WRAPPER  -->
+		<?php include("../php/rodape.php"); ?>
+	</div>
+	<!-- /. WRAPPER  -->
 	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 	<!-- JQUERY SCRIPTS -->
 	<script src="../assets/js/bootstrap.bundle.min.js"></script>
