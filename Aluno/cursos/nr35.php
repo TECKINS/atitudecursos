@@ -29,8 +29,8 @@ protegePagina();
 </head>
 <body>
 <!--<div id="wrapper">-->
-<?php include("../php/cabecalho.php"); ?>
-<?php include("menu.php"); ?>
+<?php include("../../php/cabecalho.php"); ?>
+<?php include("../menu.php"); ?>
     <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
