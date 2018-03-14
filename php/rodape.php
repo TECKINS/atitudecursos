@@ -39,7 +39,7 @@
 						<span style="font-size: 14px; color: #ffffff;">Segunda a Sexta de 08:00 hs as 21:00 hs e Sábado de 09:00 hs as 17:00 hs</span>
 					</div>
 				</div> <!-- End Latest --> <!-- Address -->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 endereco" style="text-align:right;">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 md-margin-bottom-40 endereco">
 					<div class="headline">
 						<h2 style="color: #ffffff; font-weight: 600;">Nossos Contatos</h2></div>
 						<address class="md-margin-bottom-40" style="color: #ffffff;">
