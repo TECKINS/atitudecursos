@@ -903,10 +903,7 @@ nav.navbar.navbar-default.navbar-cls-top {
 
 .menu li:last-child a { background-position: 0 -210px; }
 
-/*FIN MENU*/
-/*Posicion Responsive Menu*/
-
-nav {
+.sidebar-menu {
   background: rgba(41,128,185,1);
   padding-right: .25em;
   position: absolute;
@@ -921,7 +918,7 @@ nav {
   transition: all .3s;
 }
 
-nav.active { left: 0; }
+.sidebar-menu.active { left: 0; }
 
 #mobile-nav {
   background: url(menu-icon.png);
