@@ -93,8 +93,8 @@ po.src = '//atitudecursos.org/livehelperchat-master/lhc_web/index.php/chat/getst
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 
-$('#mobile-nav').click(function(event) {
-  $('nav').toggleClass('active');
+$('#menu-toggle').click(function(event) {
+  $('.sidebar-menu').toggleClass('active');
 });
 </script>
 
