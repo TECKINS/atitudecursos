@@ -27,10 +27,12 @@ if($nome == '' || $rg == '' || $cpf == '' || $pais == '' || $endereco == '' || $
 		//if ($senha == '' || $c_senha == '') {
 			// Inserindo os dados no banco de dados
 
-	$sql = mysqli_query($conexao, "UPDATE aluno SET nome='{$nome}', rg='{$rg}', cpf='{$cpf}', pais='{$pais}', endereco='{$endereco}', numero='{$numero}', complemento='{$complemento}', bairro='{$bairro}', cep='{$cep}', cidade='{$cidade}', uf='{$uf}', telefone='{$telefone}' WHERE email = '$email'") 
+	$nomeImg = md5($nome);
+
+	$sql = mysqli_query($conexao, "UPDATE aluno SET nome='{$nome}', rg='{$rg}', cpf='{$cpf}', pais='{$pais}', endereco='{$endereco}', numero='{$numero}', complemento='{$complemento}', bairro='{$bairro}', cep='{$cep}', cidade='{$cidade}', uf='{$uf}', telefone='{$telefone}' , img='{$nomeImg}' WHERE email = '$email'") 
 	or die( mysql_error());
 
-	if (move_uploaded_file($img['tmp_name'], "../assets/".$img['name'])) {
+	if (move_uploaded_file($img['tmp_name'], "../Aluno/images/users/".$nomeImg)) {
 		echo "Upload efetuado com sucesso!";
 	} else {
 		echo "Não foi possível enviar o arquivo, tente novamente";
