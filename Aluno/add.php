@@ -3,6 +3,8 @@ session_start();
 
 include("../php/config.php");
 
+$teste = 'teste';
+
 $id = $_GET['id'];
 
 $sql = mysqli_query($conexao,"SELECT id,nome,link,descricao,categoria,page FROM cad_cursos WHERE id= '$id'");
