@@ -19,7 +19,7 @@ $uf = $_POST['uf'];
 $telefone = $_POST['telefone'];
 $senha = ($_POST['senha']);
 $c_senha = ($_POST['c_senha']);
-$img = $_FILE['img'];
+$img = $_FILES['img'];
 
 if($nome == '' || $rg == '' || $cpf == '' || $pais == '' || $endereco == '' || $numero == '' || $complemento == '' || $bairro == '' || $cep == '' || $cidade == '' || $uf == '' || $telefone == '') {  
 	echo("<script>alert('Nenhum dos campos podem ficar em branco. Verifique e tente novamente!'); location.href='../Aluno/dados.php';</script>");
