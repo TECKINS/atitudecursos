@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0">
+<nav class="navbar navbar-default navbar-cls-top navbar-fixed-top" role="navigation" style="margin-bottom: 0">
 	<div class="navbar-header">
-		<button id="menu-toggle" type="button" class="navbar-toggle">
+		<button id="menu-toggle" type="button" class="navbar-toggle menu-icon">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -8,6 +8,7 @@
 		</button>
 		<!--<a class="navbar-brand" href="index.html"><img src="../images/logo.png"/></a>-->
 			<a class="navbar-brand" href="index.php"><img src="../images/logo.png"/></a>
+			<a style="color: #fff;" class="visible-xs-block navbar-toggle " data-toggle="modal" data-target="#confirm"><i class="fa fa-lg fa-power-off"></i></a>
 	</div>
 <!--<div style="color: white;padding: 5px 20px 5px 200px;font-size: 16px; float: left;">
 <form class="navbar-form navbar-left" role="search">
@@ -17,7 +18,7 @@
 				  <button type="submit" class="btn btn-success">Buscar</button>
 				</form>
 </div>-->
-	<div style="color: white;padding: 5px 20px 5px 20px;float: right;font-size: 16px;">
+	<div class="hidden-xs" style="color: white; float: right;font-size: 16px;">
 <!-- Top Menu Items -->
 	<ul class="nav navbar-right top-nav">
 		<li class="dropdown">

@@ -1,6 +1,7 @@
 ﻿<?php
 
 $conexao = mysqli_connect('mysql.hostinger.com.br','u998161308_root', '1000atitudes', 'u998161308_users');
+$conexao->set_charset("utf8");
 
 function protegePaginaAdm() {
 	if (!isset($_SESSION['id']) OR !isset($_SESSION['nome'])) {

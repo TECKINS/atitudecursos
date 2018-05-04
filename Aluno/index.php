@@ -5,7 +5,7 @@ include("../php/config.php");
 protegePagina();
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-br">
 <head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,7 +32,7 @@ protegePagina();
 	<link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Painel Inicial</title>
+	<title>Atitude Cursos</title>
 	<!-- BOOTSTRAP STYLES-->
 	<link href="../assets/css/bootstrap.css" rel="stylesheet"/>
 	 <!-- FONTAWESOME STYLES-->
@@ -48,29 +48,23 @@ protegePagina();
 <body>
 	<?php include("../php/cabecalho.php"); ?>
 	<?php include("menu.php"); ?>
-	<div id="page-content-wrapper">
 		<!-- /. NAV SIDE  -->
-		<div id="page-wrapper" >
-			<div id="page-inner">
-				<?php 
-					$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
-					if(file_exists('paginas/'.$pagina.'.php')) {
-						include 'paginas/'.$pagina.'.php';
-					}else {
-						echo 'Erro 404! A página não existe.';
-					}
-				?>
-
-				 <!-- /. PAGE INNER  -->
-			</div>
-			 <!-- /. PAGE WRAPPER  -->
-		</div>
-		<?php include("../php/rodape.php"); ?>
+	<div id="page-inner" class="container-fluid">
+		<?php 
+			$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'inicial';
+			if(file_exists('paginas/'.$pagina.'.php')) {
+				include 'paginas/'.$pagina.'.php';
+			}else {
+				echo 'Erro 404! A página não existe.';
+			}
+		?>
+	<!-- /. PAGE INNER  -->
 	</div>
+	
+	<?php include("../php/rodape.php"); ?>
 	<!-- /. WRAPPER  -->
 	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 	<!-- JQUERY SCRIPTS -->
-	<script src="../assets/js/bootstrap.bundle.min.js"></script>
 	<script src="../assets/js/jquery-1.10.2.js"></script>
 	  <!-- BOOTSTRAP SCRIPTS -->
 	<script src="../assets/js/bootstrap.min.js"></script>
@@ -91,8 +85,6 @@ var location  = (document.location) ? encodeURIComponent(window.location.href.su
 po.src = '//atitudecursos.org/livehelperchat-master/lhc_web/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(check_operator_messages)/true/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1?r='+referrer+'&l='+location;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
-</script>
-
 
 </body>
 </html>

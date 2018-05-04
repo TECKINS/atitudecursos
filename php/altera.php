@@ -27,7 +27,9 @@ if($nome == '' || $rg == '' || $cpf == '' || $pais == '' || $endereco == '' || $
 		//if ($senha == '' || $c_senha == '') {
 			// Inserindo os dados no banco de dados
 
-	$nomeImg = md5($nome);
+	$imagemExt = explode('.', $img['name']);
+	$extensao = end($imagemExt);
+	$nomeImg = md5($nome).'.'.$extensao;
 
 	$sql = mysqli_query($conexao, "UPDATE aluno SET nome='{$nome}', rg='{$rg}', cpf='{$cpf}', pais='{$pais}', endereco='{$endereco}', numero='{$numero}', complemento='{$complemento}', bairro='{$bairro}', cep='{$cep}', cidade='{$cidade}', uf='{$uf}', telefone='{$telefone}' , img='{$nomeImg}' WHERE email = '$email'") 
 	or die( mysql_error());
@@ -43,13 +45,13 @@ if($nome == '' || $rg == '' || $cpf == '' || $pais == '' || $endereco == '' || $
 			$sql = mysqli_query($conexao, "UPDATE aluno SET senha=sha1('{$senha}') WHERE email = '$email'") 
 
 			or die( mysql_error() );
-			header("Location:../Aluno/dados.php");
+			header("Location:../Aluno/index.php?pagina=dados");
 
 		} else {
-			echo("<script>alert('Confirmação de senha incorreta! Por favor verifique e tente novamente.'); location.href='../Aluno/dados.php';</script>");	
+			echo("<script>alert('Confirmação de senha incorreta! Por favor verifique e tente novamente.'); location.href='../Aluno/index.php?pagina=dados';</script>");	
 		}
 	} else {
-		header("Location:../Aluno/dados.php");
+		header("Location:../Aluno/index.php?pagina=dados");
 	}
 
 		/*} else {
@@ -60,12 +62,12 @@ if($nome == '' || $rg == '' || $cpf == '' || $pais == '' || $endereco == '' || $
 				$sql = mysqli_query($conexao, "UPDATE aluno SET nome='{$nome}', rg='{$rg}', cpf='{$cpf}', pais='{$pais}', endereco='{$endereco}', numero='{$numero}', complemento='{$complemento}', bairro='{$bairro}', cep='{$cep}', cidade='{$cidade}', uf='{$uf}', telefone='{$telefone}', senha=sha1('{$senha}') WHERE email = '$email'") 
 				
 									or die( mysql_error() );
-									header("Location:../Aluno/dados.php");
+									header("Location:../Aluno/index.php?pagina=dados");
 		
 	
 		} else {
 	
-			echo("<script>alert('Confirmação de senha incorreta! Por favor verifique e tente novamente.'); location.href='../Aluno/dados.php';</script>");
+			echo("<script>alert('Confirmação de senha incorreta! Por favor verifique e tente novamente.'); location.href='../Aluno/index.php?pagina=dados';</script>");
 	
 		}	*/
 	}
